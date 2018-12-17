@@ -48,7 +48,7 @@ script:
       # Convert the timeout exit code to 0.
       RESULT=$?; if [ $RESULT -eq 0 ] || [ $RESULT -eq 142 ]; then true; else false; fi;
 before_deploy:
- Set up git user name and tag this commit
+# Set up git user name and tag this commit
   - git config --local user.name "clipper"
   - git config --local user.email "clipper@rupee.sh"
   - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
