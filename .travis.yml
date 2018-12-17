@@ -52,7 +52,7 @@ before_deploy:
   - git config --local user.name "clipper"
   - git config --local user.email "clipper@rupee.sh"
   - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
-   - "./pre-deploy.sh"
+  - "./pre-deploy.sh"
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
