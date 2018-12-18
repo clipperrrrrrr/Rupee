@@ -299,7 +299,7 @@ public:
         } else {
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256(""));
+       // assert(hashGenesisBlock == uint256(""));
         }
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -370,7 +370,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 57575;
-        assert(hashGenesisBlock == uint256(""));
+        //assert(hashGenesisBlock == uint256(""));
 
         bech32_hrp = "drst";
 
