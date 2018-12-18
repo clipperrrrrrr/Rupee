@@ -160,9 +160,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1505224800;
-        genesis.nBits = 0x207fffff;;
-        genesis.nNonce = 12345;
+        genesis.nTime = 1545146905;
+        genesis.nBits = 504365040;
+        genesis.nNonce = 405023;
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
             hashGenesisBlock = uint256S("");
@@ -184,8 +184,8 @@ public:
             }
         } else {
         
-        assert(hashGenesisBlock == uint256(""));
-        assert(genesis.hashMerkleRoot == uint256(""));
+        assert(hashGenesisBlock == uint256("0x00000b58a060f4f3130cdf236727769391fb080f6caf2801cb7b1fab1c3d3c26"));
+        assert(genesis.hashMerkleRoot == uint256("0x0692e89585ff22b5664a61a4814addc7e33d44887a10863893c501b99f19276f"));
         }
         vSeeds.push_back(CDNSSeedData("0", "dns0.rupee.sh")); // run by clipper
         vSeeds.push_back(CDNSSeedData("1", "dns1.rupee.sh")); // run by butt
