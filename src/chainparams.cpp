@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The hore developers
+// Copyright (c) 2017 The Phore developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -127,12 +127,12 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // DigitalRupee: 1 day
         nTargetSpacing = 1 * 60;  // DigitalRupee: 1 minute
-        nMaturity = 50;
+        nMaturity = 100;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 1000000000 * COIN;
+        nMaxMoneyOut = 8200000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 1000;
 
         nModifierUpdateBlock = 468744;
 
@@ -161,13 +161,24 @@ public:
         genesis.nTime = 1505224800;
         genesis.nBits = 0x207fffff;;
         genesis.nNonce = 12345;
-
+        hashGenesisBlock = uint256("0x01");
+         if (true && genesis.GetHash() != hashGenesisBlock)
+          {
+            Logprintf("recalculating params for mainnet.\n");
+            Logprintf("old mainnet genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
+            Logprintf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
+        // deliberately empty for loop finds nonce value.
+            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
+            Logprintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+            Logprintf("new mainnet genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
+            Logprintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+          }
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
-        assert(genesis.hashMerkleRoot == uint256("0x894177137a45952cfed89dd395e7fc85208a53548f34defc7c1a85cb0736b3a3"));
+        assert(hashGenesisBlock == uint256("0x01"));
+       // assert(genesis.hashMerkleRoot == uint256("0x894177137a45952cfed89dd395e7fc85208a53548f34defc7c1a85cb0736b3a3"));
 
-        //vSeeds.push_back(CDNSSeedData("0", "dns0.digitalrupee.io")); // run by Moonshot
-        //vSeeds.push_back(CDNSSeedData("1", "digitalrupee.seed.rho.industries")); // run by Julian Meyer (meyer9)
+        vSeeds.push_back(CDNSSeedData("0", "dns0.rupee.sh")); // run by clipper
+        vSeeds.push_back(CDNSSeedData("1", "dns1.rupee.sh")); // run by butt
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 31);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 55);
