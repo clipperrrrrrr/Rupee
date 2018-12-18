@@ -128,7 +128,7 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // DigitalRupee: 1 day
-        nTargetSpacing = 1 * 60;  // DigitalRupee: 1 minute
+        nTargetSpacing = 1 * 15;  // DigitalRupee: 1 minute
         nMaturity = 100;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 8200000 * COIN;
@@ -263,11 +263,11 @@ public:
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // DigitalRupee: 1 day
-        nTargetSpacing = 1 * 10;  // DigitalRupee: 1 minute
+        nTargetSpacing = 1 * 15;  // DigitalRupee: 1 minute
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 1; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 43199500 * COIN;
+        nMaxMoneyOut = 8200000 * COIN;
         nLastPOWBlock = 2400;
         nZerocoinStartHeight = 200;
 
@@ -299,7 +299,7 @@ public:
         } else {
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0xfab709a0c107fe7cf6b0d552c514ef3228f9e0f107cd3c9b2fcea96512342cd8"));
+        assert(hashGenesisBlock == uint256("0x01"));
         }
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -370,7 +370,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 57575;
-        assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
+        assert(hashGenesisBlock == uint256("0x01"));
 
         bech32_hrp = "drst";
 
