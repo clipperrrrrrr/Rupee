@@ -128,13 +128,13 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // DigitalRupee: 1 day
-        nTargetSpacing = 1 * 15;  // DigitalRupee: 1 minute
+        nTargetSpacing = 1 * 60;  // DigitalRupee: 1 minute
         nMaturity = 100;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 8200000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 1000;
+        nLastPOWBlock = 200;
 
         nModifierUpdateBlock = 468744;
 
