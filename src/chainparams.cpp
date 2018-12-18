@@ -19,7 +19,7 @@
 using namespace std;
 using namespace boost::assign;
 
-static bool regenerate = false;
+static bool regenerate = true;
 
 struct SeedSpec6 {
     uint8_t addr[16];
