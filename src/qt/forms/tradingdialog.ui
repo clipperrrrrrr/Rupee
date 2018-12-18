@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy PHR</string>
+      <string>Buy DRS</string>
      </property>
      <property name="icon">
-      <iconset resource="../phore.qrc">
+      <iconset resource="../digitalrupee.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>PHR</string>
+      <string>DRS</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,7 +1704,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>PHR</string>
+      <string>DRS</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="UnitsInputPHR">
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell PHR</string>
+      <string>Sell DRS</string>
      </property>
      <property name="icon">
-      <iconset resource="../phore">
+      <iconset resource="../digitalrupee">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,7 +1777,7 @@
          </font>
         </property>
         <property name="text">
-         <string>PHR Available:</string>
+         <string>DRS Available:</string>
         </property>
        </widget>
       </item>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>PHR</string>
+         <string>DRS</string>
         </property>
        </widget>
       </item>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>PHR Balance:</string>
+      <string>DRS Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>PHR Available:</string>
+      <string>DRS Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,7 +2832,7 @@
       </font>
      </property>
      <property name="text">
-      <string>PHR Pending:</string>
+      <string>DRS Pending:</string>
      </property>
     </widget>
     <widget class="QLabel" name="PHRPendingLabel">
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex PHR Deposit Address:</string>
+      <string>Bittrex DRS Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2944,7 +2944,7 @@
       <string>Generate Phore Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../phore.qrc">
+      <iconset resource="../digitalrupee.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../phore.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../digitalrupee.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../phore.qrc">
+      <iconset resource="../digitalrupee.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../phore.qrc"/>
+  <include location="../digitalrupee.qrc"/>
  </resources>
  <connections/>
 </ui>

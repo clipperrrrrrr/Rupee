@@ -1,0 +1,26 @@
+[Unit]
+Description=DigitalRupee's distributed currency daemon
+After=network.target
+
+[Service]
+User=digitalrupee
+Group=digitalrupee
+
+Type=forking
+PIDFile=/var/lib/digitalrupeed/digitalrupeed.pid
+
+ExecStart=/usr/bin/digitalrupeed -daemon -pid=/var/lib/digitalrupeed/digitalrupeed.pid \
+          -conf=/etc/digitalrupee/digitalrupee.conf -datadir=/var/lib/digitalrupeed
+
+ExecStop=-/usr/bin/digitalrupee-cli -conf=/etc/digitalrupee/digitalrupee.conf \
+         -datadir=/var/lib/digitalrupeed stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

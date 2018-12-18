@@ -66,13 +66,13 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user `gitianuser` not for `root`.
 
-Clone the git repositories for phore and Gitian.
+Clone the git repositories for digitalrupee and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/phoreproject/phore
-git clone https://github.com/phoreproject/gitian.sigs.git
-git clone https://github.com/phoreproject/phore-detached-sigs.git
+git clone https://github.com/digitalrupeeproject/digitalrupee
+git clone https://github.com/digitalrupeeproject/gitian.sigs.git
+git clone https://github.com/digitalrupeeproject/digitalrupee-detached-sigs.git
 ```
 
 Setting up the Gitian image

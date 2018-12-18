@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: phored.service
-Upstart: phored.conf
-OpenRC:  phored.openrc
-         phored.openrcconf
-CentOS:  phored.init
+SystemD: digitalrupeed.service
+Upstart: digitalrupeed.conf
+OpenRC:  digitalrupeed.openrc
+         digitalrupeed.openrcconf
+CentOS:  digitalrupeed.init
 
 have been made available to assist packagers in creating node packages here.
 
