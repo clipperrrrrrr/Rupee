@@ -30,7 +30,7 @@ struct SeedSpec6 {
 /**
  * Main network
  */
-static bool regenerate = true;
+static bool regenerate = false;
 
 //! Convert the pnSeeds6 array into usable address objects.
 static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data, unsigned int count)
@@ -163,7 +163,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1545146905;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 12345;
+        genesis.nNonce = 451826;
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
             hashGenesisBlock = uint256S("");
@@ -190,8 +190,8 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x0000033346b0b31697bcd178789fe1d6d10f96a7fd46d74fbf647d5ea3757348"));
-            assert(genesis.hashMerkleRoot == uint256("0xedee755717c4de66ce52056e36ae0f6e9f0269667fd8a06e3c5367588cbfadbd"));
+            assert(hashGenesisBlock == uint256("0x000008ade5f6d99df7d08bbad459bb521d1762f0190033eec56df30f55cc3b4b"));
+            assert(genesis.hashMerkleRoot == uint256("0x808b70083cf4d3a4a998d61cb59858950f385f02a3ef8b4f3008dbb50651802a"));
         }
         
         vSeeds.push_back(CDNSSeedData("0", "dns0.rupee.sh")); // run by clipper
@@ -282,7 +282,7 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1545103494;
-        genesis.nNonce = 0;
+        genesis.nNonce = 1019176;
 
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
@@ -311,8 +311,8 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x0000049f035ee1942b9d3dd10965e7e07929aeaadd2c8855107dfeed05645d3f"));
-            assert(genesis.hashMerkleRoot == uint256("0xedee755717c4de66ce52056e36ae0f6e9f0269667fd8a06e3c5367588cbfadbd"));
+            assert(hashGenesisBlock == uint256("0x00000869d3749deff0f8e0330a3238e21b9c0c91c745c0d18ee08fb09d1b2e10"));
+            assert(genesis.hashMerkleRoot == uint256("0x808b70083cf4d3a4a998d61cb59858950f385f02a3ef8b4f3008dbb50651802a"));
         }
         
         vFixedSeeds.clear();
