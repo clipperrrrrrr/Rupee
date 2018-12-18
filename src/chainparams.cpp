@@ -67,7 +67,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x01"));
+    boost::assign::map_list_of(0, uint256(""));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1504595227,
@@ -75,7 +75,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x01"));
+    boost::assign::map_list_of(0, uint256(""));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1504595227,
@@ -160,9 +160,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        //genesis.nTime = 1505224800;
-        //genesis.nBits = 0x207fffff;;
-        //genesis.nNonce = 12345;
+        genesis.nTime = 1505224800;
+        genesis.nBits = 0x207fffff;;
+        genesis.nNonce = 12345;
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
             hashGenesisBlock = uint256S("");
@@ -184,8 +184,8 @@ public:
             }
         } else {
         
-        assert(hashGenesisBlock == uint256("0x01"));
-        assert(genesis.hashMerkleRoot == uint256("0x01"));
+        assert(hashGenesisBlock == uint256(""));
+        assert(genesis.hashMerkleRoot == uint256(""));
         }
         vSeeds.push_back(CDNSSeedData("0", "dns0.rupee.sh")); // run by clipper
         vSeeds.push_back(CDNSSeedData("1", "dns1.rupee.sh")); // run by butt
@@ -299,7 +299,7 @@ public:
         } else {
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x01"));
+        assert(hashGenesisBlock == uint256(""));
         }
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -370,7 +370,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 57575;
-        //assert(hashGenesisBlock == uint256("0x01"));
+        assert(hashGenesisBlock == uint256(""));
 
         bech32_hrp = "drst";
 
