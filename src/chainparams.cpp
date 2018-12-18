@@ -164,29 +164,10 @@ public:
         genesis.nBits = 504365040;
         genesis.nNonce = 405023;
         hashGenesisBlock = genesis.GetHash();
-        if (regenerate) {
-            hashGenesisBlock = uint256S("");
-            genesis.nNonce = 0;
-            if (true && (genesis.GetHash() != hashGenesisBlock)) {
-                while (genesis.GetHash() > bnProofOfWorkLimit)
-                {
-                    ++genesis.nNonce;
-                    if (genesis.nNonce == 0)
-                    {
-                        ++genesis.nTime;
-                    }
-                }
-                std::cout << "// Mainnet ---";
-                std::cout << " nonce: " << genesis.nNonce;
-                std::cout << " time: " << genesis.nTime;
-                std::cout << " hash: 0x" << genesis.GetHash().ToString().c_str();
-                std::cout << " merklehash: 0x"  << genesis.hashMerkleRoot.ToString().c_str() <<  "\n";
-            }
-        } else {
         
         assert(hashGenesisBlock == uint256("0x00000b58a060f4f3130cdf236727769391fb080f6caf2801cb7b1fab1c3d3c26"));
         assert(genesis.hashMerkleRoot == uint256("0x0692e89585ff22b5664a61a4814addc7e33d44887a10863893c501b99f19276f"));
-        }
+        
         vSeeds.push_back(CDNSSeedData("0", "dns0.rupee.sh")); // run by clipper
         vSeeds.push_back(CDNSSeedData("1", "dns1.rupee.sh")); // run by butt
 
@@ -277,30 +258,8 @@ public:
         genesis.nTime = 1505224800;
         genesis.nNonce = 12346;
         hashGenesisBlock = genesis.GetHash();
-        if (regenerate) {
-            hashGenesisBlock = uint256S("");
-            genesis.nNonce = 0;
-            if (true && (genesis.GetHash() != hashGenesisBlock)) {
-                while (genesis.GetHash() > bnProofOfWorkLimit)
-                {
-                    ++genesis.nNonce;
-                    if (genesis.nNonce == 0)
-                    {
-                        ++genesis.nTime;
-                    }
-                }
-                std::cout << "// Testnet ---";
-                std::cout << " nonce: " << genesis.nNonce;
-                std::cout << " time: " << genesis.nTime;
-                std::cout << " hash: 0x" << genesis.GetHash().ToString().c_str();
-                std::cout << " merklehash: 0x"  << genesis.hashMerkleRoot.ToString().c_str() <<  "\n";
-
-            }
-        } else {
-
-        hashGenesisBlock = genesis.GetHash();
        // assert(hashGenesisBlock == uint256(""));
-        }
+        
         vFixedSeeds.clear();
         vSeeds.clear();
 
