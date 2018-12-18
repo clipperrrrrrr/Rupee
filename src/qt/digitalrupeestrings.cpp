@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("digitalrupee-core", ""
 QT_TRANSLATE_NOOP("digitalrupee-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("digitalrupee-core", "(11771 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("digitalrupee-core", "(55555 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("digitalrupee-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("digitalrupee-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("digitalrupee-core", "(must be 11771 for mainnet)"),
+QT_TRANSLATE_NOOP("digitalrupee-core", "(must be 55555 for mainnet)"),
 QT_TRANSLATE_NOOP("digitalrupee-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("digitalrupee-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("digitalrupee-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

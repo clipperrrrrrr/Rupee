@@ -118,7 +118,7 @@ public:
         pchMessageStart[2] = 0xc4;
         pchMessageStart[3] = 0x91;
         vAlertPubKey = ParseHex("04659d53bd8f7ad9d34a17281febedac754e5a6eb136142d3a9c6c0ea21b6ed7498ceb3d872eed00ae755f7aeadaeb1d9ab5e1a8f1e7efcd0ddcb39d4623c12790");
-        nDefaultPort = 11771;
+        nDefaultPort = 55555;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
@@ -169,15 +169,15 @@ public:
         //vSeeds.push_back(CDNSSeedData("0", "dns0.digitalrupee.io")); // run by Moonshot
         //vSeeds.push_back(CDNSSeedData("1", "digitalrupee.seed.rho.industries")); // run by Julian Meyer (meyer9)
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 31);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 55);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 125);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x01)(0xbc).convert_to_container<std::vector<unsigned char> >();
 
-        bech32_hrp = "ph";
+        bech32_hrp = "drs";
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 

@@ -2155,17 +2155,11 @@ double ConvertBitsToDouble(unsigned int nBits)
 int64_t GetBlockValue(int nHeight)
 {
     if (nHeight == 0) {
-        return 17500000 * COIN;
+        return 52000 * COIN;
     } else if (nHeight > 0 && nHeight <= 200) {
-        return 2500 * COIN;
-    } else if (nHeight > 200 && nHeight <= 775600) {
-        return 7 * COIN;
-    } else if (nHeight > 775600 && nHeight <= 1043999) {
-        return 4.5 * COIN;
-    } else if (nHeight > 1043999 && nHeight <= 1562398) {
-        return 3.6 * COIN;
+        return 250 * COIN;
     } else {
-        return 2.7 * COIN;
+        return 1 * COIN;
     }
 }
 
