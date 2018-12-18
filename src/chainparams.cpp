@@ -56,7 +56,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("0x000001a44e947b21433ee2dce06143fe73a9cf1f91ec2d945fa0680fcaa9aa39"));
+    (     0, uint256("0x"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -67,7 +67,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x01"));
+    boost::assign::map_list_of(0, uint256("0x"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1504595227,
@@ -75,7 +75,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x01"));
+    boost::assign::map_list_of(0, uint256("0x"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1504595227,
@@ -162,11 +162,36 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1545146905;
         genesis.nBits = 504365040;
-        genesis.nNonce = 405023;
+        genesis.nNonce = 12345;
         hashGenesisBlock = genesis.GetHash();
+        if(genesis.GetHash() != uint256("0x"))
+        {
+        printf("MSearching for genesis block...\n");
+        uint256 hashTarget;
+        hashTarget.SetCompact(genesis.nBits);
+        while(uint256(genesis.GetHash()) > uint256(hashTarget))
+        {
+            ++genesis.nNonce;
+            if (genesis.nNonce == 0)
+            {
+                printf("Mainnet NONCE WRAPPED, incrementing time");
+                std::cout << std::string("Mainnet NONCE WRAPPED, incrementing time:\n");
+                ++genesis.nTime;
+            }
+            if (genesis.nNonce % 10000 == 0)
+            {
+               printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
+            }
+        }
+        printf("Mainnet block.nTime = %u \n", genesis.nTime);
+        printf("Mainnet block.nNonce = %u \n", genesis.nNonce);
+        printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+        }
+        //hashGenesisBlock = genesis.GetHash();
         
-        assert(hashGenesisBlock == uint256("0x000001a44e947b21433ee2dce06143fe73a9cf1f91ec2d945fa0680fcaa9aa39"));
-        assert(genesis.hashMerkleRoot == uint256("0x0692e89585ff22b5664a61a4814addc7e33d44887a10863893c501b99f19276f"));
+        //assert(hashGenesisBlock == uint256("0x000001a44e947b21433ee2dce06143fe73a9cf1f91ec2d945fa0680fcaa9aa39"));
+        //assert(genesis.hashMerkleRoot == uint256("0x0692e89585ff22b5664a61a4814addc7e33d44887a10863893c501b99f19276f"));
         
         vSeeds.push_back(CDNSSeedData("0", "dns0.rupee.sh")); // run by clipper
         vSeeds.push_back(CDNSSeedData("1", "dns1.rupee.sh")); // run by butt
