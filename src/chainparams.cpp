@@ -19,7 +19,7 @@
 using namespace std;
 using namespace boost::assign;
 
-static bool regenerate = true;
+static bool regenerate = false;
 
 struct SeedSpec6 {
     uint8_t addr[16];
@@ -160,9 +160,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1505224800;
-        genesis.nBits = 0x207fffff;;
-        genesis.nNonce = 12345;
+        //genesis.nTime = 1505224800;
+        //genesis.nBits = 0x207fffff;;
+        //genesis.nNonce = 12345;
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
             hashGenesisBlock = uint256S("");
