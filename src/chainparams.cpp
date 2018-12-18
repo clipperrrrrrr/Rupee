@@ -56,7 +56,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("0x00000b58a060f4f3130cdf236727769391fb080f6caf2801cb7b1fab1c3d3c26"));
+    (     0, uint256("0x000001a44e947b21433ee2dce06143fe73a9cf1f91ec2d945fa0680fcaa9aa39"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -165,7 +165,7 @@ public:
         genesis.nNonce = 405023;
         hashGenesisBlock = genesis.GetHash();
         
-        assert(hashGenesisBlock == uint256("0x00000b58a060f4f3130cdf236727769391fb080f6caf2801cb7b1fab1c3d3c26"));
+        assert(hashGenesisBlock == uint256("0x000001a44e947b21433ee2dce06143fe73a9cf1f91ec2d945fa0680fcaa9aa39"));
         assert(genesis.hashMerkleRoot == uint256("0x0692e89585ff22b5664a61a4814addc7e33d44887a10863893c501b99f19276f"));
         
         vSeeds.push_back(CDNSSeedData("0", "dns0.rupee.sh")); // run by clipper
