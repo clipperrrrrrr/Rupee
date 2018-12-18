@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("0x01"));
+    (     0, uint256("2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -65,7 +65,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x01"));
+    boost::assign::map_list_of(0, uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1504595227,
@@ -73,7 +73,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x01"));
+    boost::assign::map_list_of(0, uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1504595227,
@@ -161,29 +161,22 @@ public:
         genesis.nTime = 1505224800;
         genesis.nBits = 0x207fffff;;
         genesis.nNonce = 12345;
-        hashGenesisBlock = genesis.GetHash();
-        if (regenerate) {
-            hashGenesisBlock = uint256S("");
-            genesis.nNonce = 0;
-            if (true && (genesis.GetHash() != hashGenesisBlock)) {
-                while (genesis.GetHash() > bnProofOfWorkLimit)
+        hashGenesisBlock = uint256("0x01");
+        if (true && genesis.GetHash() != hashGenesisBlock)
                 {
-                    ++genesis.nNonce;
-                    if (genesis.nNonce == 0)
-                    {
-                        ++genesis.nTime;
-                    }
+                    Logprintf("recalculating params for mainnet.\n");
+                    Logprintf("old mainnet genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
+                    Logprintf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
+                // deliberately empty for loop finds nonce value.
+                    for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
+                    Logprintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+                    Logprintf("new mainnet genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
+                    Logprintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
                 }
-                std::cout << "// Mainnet ---";
-                std::cout << " nonce: " << genesis.nNonce;
-                std::cout << " time: " << genesis.nTime;
-                std::cout << " hash: 0x" << genesis.GetHash().ToString().c_str();
-                std::cout << " merklehash: 0x"  << genesis.hashMerkleRoot.ToString().c_str() <<  "\n";
-            }
-        } else {
-        assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
-        assert(genesis.hashMerkleRoot == uint256("0x894177137a45952cfed89dd395e7fc85208a53548f34defc7c1a85cb0736b3a3"));
-        }
+        hashGenesisBlock = genesis.GetHash();
+        assert(hashGenesisBlock == uint256("0x01"));
+        assert(genesis.hashMerkleRoot == uint256("0x01"));
+
         vSeeds.push_back(CDNSSeedData("0", "dns0.rupee.sh")); // run by clipper
         vSeeds.push_back(CDNSSeedData("1", "dns1.rupee.sh")); // run by butt
 
