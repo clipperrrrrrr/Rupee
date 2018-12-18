@@ -15,7 +15,7 @@
 #include <iostream>
 #include <accumulators.h>
 #include "wallet.h"
-#include "zdrswallet.h"
+#include "zrswallet.h"
 
 using namespace libzerocoin;
 
@@ -493,7 +493,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     CWalletDB walletdb(strWalletFile, "cr+");
 
     CWallet wallet(strWalletFile);
-    CzDRSWallet zWallet(wallet.strWalletFile);
+    CzRSWallet zWallet(wallet.strWalletFile);
     zWallet.SetMasterSeed(seedMaster);
     wallet.setZWallet(&zWallet);
 
@@ -505,7 +505,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     for (int i = 0; i < nTests; i++) {
         PrivateCoin coin(Params().Zerocoin_Params(), denom, false);
         CDeterministicMint dMint;
-        zWallet.GenerateDeterministicZDRS(denom, coin, dMint);
+        zWallet.GenerateDeterministicZRS(denom, coin, dMint);
         vCoins.emplace_back(coin);
     }
 

@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/digitalrupeeproject/digitalrupee
+url=https://github.com/rupeesproject/rupees
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -r -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the digitalrupee, gitian-builder, gitian.sigs, and digitalrupee-detached-sigs.
+Run this script from the directory containing the rupees, gitian-builder, gitian.sigs, and rupees-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/digitalrupeeproject/digitalrupee
+-u|--url	Specify the URL of the repository. Default is https://github.com/rupeesproject/rupees
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -237,8 +237,8 @@ echo "${COMMIT}"
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/digitalrupeeproject/gitian.sigs.git
-    git clone https://github.com/digitalrupeeproject/digitalrupee-detached-sigs.git
+    git clone https://github.com/rupeesproject/gitian.sigs.git
+    git clone https://github.com/rupeesproject/rupees-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder || exit
     if [[ -n "$USE_LXC" ]]
@@ -252,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./digitalrupee || exit
+pushd ./rupees || exit
 git fetch
 git checkout "${COMMIT}"
 popd || exit
@@ -261,7 +261,7 @@ popd || exit
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p "./digitalrupee-binaries/${VERSION}"
+	mkdir -p "./rupees-binaries/${VERSION}"
 
 	# Build Dependencies
 	echo ""
@@ -271,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../digitalrupee/depends download SOURCES_PATH="$(pwd)/cache/common"
+	make -C ../rupees/depends download SOURCES_PATH="$(pwd)/cache/common"
 
 	# Linux
 	if [[ $linux = true ]]
@@ -279,9 +279,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit digitalrupee=${COMMIT} --url digitalrupee=${url} ../digitalrupee/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../digitalrupee/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/digitalrupee-*.tar.gz build/out/src/digitalrupee-*.tar.gz ../digitalrupee-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit rupees=${COMMIT} --url rupees=${url} ../rupees/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../rupees/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/rupees-*.tar.gz build/out/src/rupees-*.tar.gz ../rupees-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -289,10 +289,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit digitalrupee=${COMMIT} --url digitalrupee=${url} ../digitalrupee/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../digitalrupee/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/digitalrupee-*-win-unsigned.tar.gz inputs/digitalrupee-win-unsigned.tar.gz
-	    mv build/out/digitalrupee-*.zip build/out/digitalrupee-*.exe ../digitalrupee-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit rupees=${COMMIT} --url rupees=${url} ../rupees/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../rupees/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/rupees-*-win-unsigned.tar.gz inputs/rupees-win-unsigned.tar.gz
+	    mv build/out/rupees-*.zip build/out/rupees-*.exe ../rupees-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -300,10 +300,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit digitalrupee=${COMMIT} --url digitalrupee=${url} ../digitalrupee/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../digitalrupee/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/digitalrupee-*-osx-unsigned.tar.gz inputs/digitalrupee-osx-unsigned.tar.gz
-	    mv build/out/digitalrupee-*.tar.gz build/out/digitalrupee-*.dmg ../digitalrupee-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit rupees=${COMMIT} --url rupees=${url} ../rupees/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../rupees/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/rupees-*-osx-unsigned.tar.gz inputs/rupees-osx-unsigned.tar.gz
+	    mv build/out/rupees-*.tar.gz build/out/rupees-*.dmg ../rupees-binaries/${VERSION}
 	fi
 	# AArch64
 	if [[ $aarch64 = true ]]
@@ -311,9 +311,9 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} AArch64"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit digitalrupee=${COMMIT} --url digitalrupee=${url} ../digitalrupee/contrib/gitian-descriptors/gitian-aarch64.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../digitalrupee/contrib/gitian-descriptors/gitian-aarch64.yml
-	    mv build/out/digitalrupee-*.tar.gz build/out/src/digitalrupee-*.tar.gz ../digitalrupee-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit rupees=${COMMIT} --url rupees=${url} ../rupees/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gsign --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../rupees/contrib/gitian-descriptors/gitian-aarch64.yml
+	    mv build/out/rupees-*.tar.gz build/out/src/rupees-*.tar.gz ../rupees-binaries/${VERSION}
 	fi
 	popd || exit
 
@@ -341,32 +341,32 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../digitalrupee/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../rupees/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../digitalrupee/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../rupees/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../digitalrupee/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../rupees/contrib/gitian-descriptors/gitian-osx.yml
 	# AArch64
 	echo ""
 	echo "Verifying v${VERSION} AArch64"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../digitalrupee/contrib/gitian-descriptors/gitian-aarch64.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../rupees/contrib/gitian-descriptors/gitian-aarch64.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../digitalrupee/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../rupees/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../digitalrupee/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../rupees/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd || exit
 fi
 
@@ -381,10 +381,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../digitalrupee/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../digitalrupee/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/digitalrupee-*win64-setup.exe ../digitalrupee-binaries/${VERSION}
-	    mv build/out/digitalrupee-*win32-setup.exe ../digitalrupee-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../rupees/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../rupees/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/rupees-*win64-setup.exe ../rupees-binaries/${VERSION}
+	    mv build/out/rupees-*win32-setup.exe ../rupees-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -392,9 +392,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../digitalrupee/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../digitalrupee/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/digitalrupee-osx-signed.dmg ../digitalrupee-binaries/${VERSION}/digitalrupee-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../rupees/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../rupees/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/rupees-osx-signed.dmg ../rupees-binaries/${VERSION}/rupees-${VERSION}-osx.dmg
 	fi
 	popd || exit
 

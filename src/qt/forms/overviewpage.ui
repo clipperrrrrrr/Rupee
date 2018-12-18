@@ -388,7 +388,7 @@
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLabel" name="labelPHRPercent">
+                        <widget class="QLabel" name="labelRSPercent">
                          <property name="text">
                           <string notr="true">0 %</string>
                          </property>
@@ -611,7 +611,7 @@
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelLockedBalanceText">
                          <property name="toolTip">
-                          <string>Locked DRS or Masternode collaterals. These are excluded from zDRS minting.</string>
+                          <string>Locked DRS or Masternode collaterals. These are excluded from zRS minting.</string>
                          </property>
                          <property name="text">
                           <string>Locked:</string>
@@ -630,7 +630,7 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Locked DRS or Masternode collaterals. These are excluded from zDRS minting.</string>
+                          <string>Locked DRS or Masternode collaterals. These are excluded from zRS minting.</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 DRS</string>
@@ -786,12 +786,12 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>zDRS Balance</string>
+                          <string>zRS Balance</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLabel" name="labelzDRSPercent">
+                        <widget class="QLabel" name="labelzRSPercent">
                          <property name="text">
                           <string notr="true">0 %</string>
                          </property>
@@ -824,7 +824,7 @@
                         <widget class="QLabel" name="labelzBalanceMatureText">
                          <property name="toolTip">
                           <string>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zDRS are spendable.</string>
+These zRS are spendable.</string>
                          </property>
                          <property name="text">
                           <string>Available:</string>
@@ -841,7 +841,7 @@ These zDRS are spendable.</string>
                          </property>
                          <property name="toolTip">
                           <string>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zDRS are spendable.</string>
+These zRS are spendable.</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 DRS</string>
@@ -916,7 +916,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelzBalanceText">
                          <property name="toolTip">
-                          <string>Your current zDRS balance, unconfirmed and immature zDRS included.</string>
+                          <string>Your current zRS balance, unconfirmed and immature zRS included.</string>
                          </property>
                          <property name="text">
                           <string>Total:</string>
@@ -935,7 +935,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Your current zDRS balance, unconfirmed and immature zDRS included.</string>
+                          <string>Your current zRS balance, unconfirmed and immature zRS included.</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 DRS</string>

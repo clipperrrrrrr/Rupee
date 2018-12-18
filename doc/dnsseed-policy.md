@@ -46,7 +46,7 @@ related to the DNS seed operation.
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Rupees
 Core development team as well as posting on the
-[Rupees Forum](https://forum.digitalrupee.org).
+[Rupees Forum](https://forum.rupees.org).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

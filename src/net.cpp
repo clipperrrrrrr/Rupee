@@ -9,7 +9,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/digitalrupee-config.h"
+#include "config/rupees-config.h"
 #endif
 
 #include "net.h"
@@ -112,7 +112,7 @@ CCriticalSection cs_vAddedNodes;
 NodeId nLastNodeId = 0;
 CCriticalSection cs_nLastNodeId;
 
-static CSemadigitalrupee* semOutbound = NULL;
+static CSemarupees* semOutbound = NULL;
 boost::condition_variable messageHandlerCondition;
 
 // Signals for message handling
@@ -1302,7 +1302,7 @@ void static ProcessOneShot()
         vOneShots.pop_front();
     }
     CAddress addr;
-    CSemadigitalrupeeGrant grant(*semOutbound, true);
+    CSemarupeesGrant grant(*semOutbound, true);
     if (grant) {
         if (!OpenNetworkConnection(addr, &grant, strDest.c_str(), true))
             AddOneShot(strDest);
@@ -1333,7 +1333,7 @@ void ThreadOpenConnections()
 
         MilliSleep(500);
 
-        CSemadigitalrupeeGrant grant(*semOutbound);
+        CSemarupeesGrant grant(*semOutbound);
         boost::this_thread::interruption_point();
 
         // Add seed nodes if DNS seeds are all down (an infrastructure attack?).
@@ -1427,7 +1427,7 @@ void ThreadOpenAddedConnections()
             }
             BOOST_FOREACH (string& strAddNode, lAddresses) {
                 CAddress addr;
-                CSemadigitalrupeeGrant grant(*semOutbound);
+                CSemarupeesGrant grant(*semOutbound);
                 OpenNetworkConnection(addr, &grant, strAddNode.c_str());
                 MilliSleep(500);
             }
@@ -1469,7 +1469,7 @@ void ThreadOpenAddedConnections()
                         }
         }
         BOOST_FOREACH (vector<CService>& vserv, lservAddressesToAdd) {
-            CSemadigitalrupeeGrant grant(*semOutbound);
+            CSemarupeesGrant grant(*semOutbound);
             OpenNetworkConnection(CAddress(vserv[i % vserv.size()]), &grant);
             MilliSleep(500);
         }
@@ -1478,7 +1478,7 @@ void ThreadOpenAddedConnections()
 }
 
 // if successful, this moves the passed grant to the constructed node
-bool OpenNetworkConnection(const CAddress& addrConnect, CSemadigitalrupeeGrant* grantOutbound, const char* pszDest, bool fOneShot)
+bool OpenNetworkConnection(const CAddress& addrConnect, CSemarupeesGrant* grantOutbound, const char* pszDest, bool fOneShot)
 {
     //
     // Initiate outbound network connection
@@ -1747,9 +1747,9 @@ void StartNode(boost::thread_group& threadGroup, CScheduler& scheduler)
     fAddressesInitialized = true;
 
     if (semOutbound == NULL) {
-        // initialize semadigitalrupee
+        // initialize semarupees
         int nMaxOutbound = min(MAX_OUTBOUND_CONNECTIONS, nMaxConnections);
-        semOutbound = new CSemadigitalrupee(nMaxOutbound);
+        semOutbound = new CSemarupees(nMaxOutbound);
     }
 
     if (pnodeLocalHost == NULL)

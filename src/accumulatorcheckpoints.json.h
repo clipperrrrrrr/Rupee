@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DIGITALRUPEE_ACCUMULATORCHECKPOINTS_JSON_H
-#define DIGITALRUPEE_ACCUMULATORCHECKPOINTS_JSON_H
+#ifndef RUPEES_ACCUMULATORCHECKPOINTS_JSON_H
+#define RUPEES_ACCUMULATORCHECKPOINTS_JSON_H
 
 #include <string>
 std::string GetMainCheckpoints() {
@@ -57,4 +57,4 @@ std::string GetRegTestCheckpoints() {
     return strRegTestCheckpoints;
 }
 
-#endif //DIGITALRUPEE_ACCUMULATORCHECKPOINTS_JSON_H
+#endif //RUPEES_ACCUMULATORCHECKPOINTS_JSON_H

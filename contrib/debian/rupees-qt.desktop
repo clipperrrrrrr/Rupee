@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Rupees
+Comment=Rupees P2P Cryptocurrency
+Comment[fr]=Rupees, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Rupees, eşten eşe kriptografik sanal para birimi
+Exec=rupees-qt %u
+Terminal=false
+Type=Application
+Icon=rupees128
+MimeType=x-scheme-handler/rupees;
+Categories=Office;Finance;

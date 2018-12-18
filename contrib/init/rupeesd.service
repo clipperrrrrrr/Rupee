@@ -1,0 +1,26 @@
+[Unit]
+Description=Rupees's distributed currency daemon
+After=network.target
+
+[Service]
+User=rupees
+Group=rupees
+
+Type=forking
+PIDFile=/var/lib/rupeesd/rupeesd.pid
+
+ExecStart=/usr/bin/rupeesd -daemon -pid=/var/lib/rupeesd/rupeesd.pid \
+          -conf=/etc/rupees/rupees.conf -datadir=/var/lib/rupeesd
+
+ExecStop=-/usr/bin/rupees-cli -conf=/etc/rupees/rupees.conf \
+         -datadir=/var/lib/rupeesd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -423,7 +423,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../digitalrupee.qrc">
+            <iconset resource="../rupees.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1326,9 +1326,9 @@
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QLabel" name="wallet_customzdrsbackuppath_label">
+        <widget class="QLabel" name="wallet_customzrsbackuppath_label">
          <property name="text">
-          <string>Custom zDRS Backup Path:</string>
+          <string>Custom zRS Backup Path:</string>
          </property>
          <property name="visible">
           <bool>false</bool>
@@ -1336,7 +1336,7 @@
         </widget>
        </item>
        <item row="4" column="1" colspan="3">
-        <widget class="QLabel" name="wallet_customzdrsbackuppath">
+        <widget class="QLabel" name="wallet_customzrsbackuppath">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -1637,7 +1637,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../digitalrupee.qrc"/>
+  <include location="../rupees.qrc"/>
  </resources>
  <connections/>
 </ui>

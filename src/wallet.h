@@ -23,8 +23,8 @@
 #include "validationinterface.h"
 #include "wallet_ismine.h"
 #include "walletdb.h"
-#include "zdrstracker.h"
-#include "zdrswallet.h"
+#include "zrstracker.h"
+#include "zrswallet.h"
 
 #include <algorithm>
 #include <map>
@@ -89,25 +89,25 @@ enum AvailableCoinsType {
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zDRS send
+// Possible states for zRS send
 enum ZerocoinSpendStatus {
-    ZDRS_SPEND_OKAY = 0,                            // No error
-    ZDRS_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZDRS_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZDRS_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZDRS_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZDRS_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZDRS_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZDRS_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZDRS_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZDRS_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZDRS_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZDRS_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZDRS_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZDRS_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZDRS_SPENT_USED_ZDRS = 14,                      // Coin has already been spend
-    ZDRS_TX_TOO_LARGE = 15,                         // The transaction is larger than the max tx size
-    ZDRS_SPEND_V1_SEC_LEVEL
+    ZRS_SPEND_OKAY = 0,                            // No error
+    ZRS_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZRS_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZRS_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZRS_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZRS_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZRS_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZRS_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZRS_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZRS_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZRS_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZRS_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZRS_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZRS_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZRS_SPENT_USED_ZRS = 14,                      // Coin has already been spend
+    ZRS_TX_TOO_LARGE = 15,                         // The transaction is larger than the max tx size
+    ZRS_SPEND_V1_SEC_LEVEL
 };
 
 enum OutputType : int
@@ -226,15 +226,15 @@ public:
     std::string ResetMintZerocoin();
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored, std::list<CDeterministicMint>& listDMintsRestored);
-    void ZDrsBackupWallet();
+    void ZRsBackupWallet();
     bool GetZerocoinKey(const CBigNum& bnSerial, CKey& key);
-    bool CreateZDRSOutput(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
+    bool CreateZRSOutput(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
     bool GetMint(const uint256& hashSerial, CZerocoinMint& mint);
     bool GetMintFromStakeHash(const uint256& hashStake, CZerocoinMint& mint);
     bool DatabaseMint(CDeterministicMint& dMint);
     bool SetMintUnspent(const CBigNum& bnSerial);
     bool UpdateMint(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom);
-    string GetUniqueWalletBackupName(bool fzdrsAuto) const;
+    string GetUniqueWalletBackupName(bool fzrsAuto) const;
 
     /** Zerocin entry changed.
     * @note called with lock cs_wallet held.
@@ -249,13 +249,13 @@ public:
      */
     mutable CCriticalSection cs_wallet;
 
-    CzDRSWallet* zwalletMain;
+    CzRSWallet* zwalletMain;
 
     bool fFileBacked;
     bool fWalletUnlockAnonymizeOnly;
     std::string strWalletFile;
     bool fBackupMints;
-    std::unique_ptr<CzDRSTracker> zdrsTracker;
+    std::unique_ptr<CzRSTracker> zrsTracker;
 
     std::set<int64_t> setKeyPool;
     std::map<CKeyID, CKeyMetadata> mapKeyMetadata;
@@ -340,13 +340,13 @@ public:
         return nZeromintPercentage;
     }
 
-    void setZWallet(CzDRSWallet* zwallet)
+    void setZWallet(CzRSWallet* zwallet)
     {
         zwalletMain = zwallet;
-        zdrsTracker = std::unique_ptr<CzDRSTracker>(new CzDRSTracker(strWalletFile));
+        zrsTracker = std::unique_ptr<CzRSTracker>(new CzRSTracker(strWalletFile));
     }
 
-    CzDRSWallet* getZWallet() { return zwalletMain; }
+    CzRSWallet* getZWallet() { return zwalletMain; }
 
 
     bool isZeromintEnabled()
@@ -354,7 +354,7 @@ public:
         return fEnableZeromint;
     }
 
-    void setZDrsAutoBackups(bool fEnabled)
+    void setZRsAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }

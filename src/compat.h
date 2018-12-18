@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/digitalrupee-config.h"
+#include "config/rupees-config.h"
 #endif
 
 #ifdef WIN32

@@ -16,7 +16,7 @@
 #include "primitives/zerocoin.h"
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Denominations.h"
-#include "zdrstracker.h"
+#include "zrstracker.h"
 
 #include <list>
 #include <stdint.h>
@@ -177,14 +177,14 @@ public:
     bool ReadZerocoinSpendSerialEntry(const CBigNum& bnSerial);
     bool WriteCurrentSeedHash(const uint256& hashSeed);
     bool ReadCurrentSeedHash(uint256& hashSeed);
-    bool WriteZDRSSeed(const uint256& hashSeed, const vector<unsigned char>& seed);
-    bool ReadZDRSSeed(const uint256& hashSeed, vector<unsigned char>& seed);
-    bool ReadZDRSSeed_deprecated(uint256& seed);
-    bool EraseZDRSSeed();
-    bool EraseZDRSSeed_deprecated();
+    bool WriteZRSSeed(const uint256& hashSeed, const vector<unsigned char>& seed);
+    bool ReadZRSSeed(const uint256& hashSeed, vector<unsigned char>& seed);
+    bool ReadZRSSeed_deprecated(uint256& seed);
+    bool EraseZRSSeed();
+    bool EraseZRSSeed_deprecated();
 
-    bool WriteZDRSCount(const uint32_t& nCount);
-    bool ReadZDRSCount(uint32_t& nCount);
+    bool WriteZRSCount(const uint32_t& nCount);
+    bool ReadZRSCount(uint32_t& nCount);
     std::map<uint256, std::vector<pair<uint256, uint32_t> > > MapMintPool();
     bool WriteMintPoolPair(const uint256& hashMasterSeed, const uint256& hashPubcoin, const uint32_t& nCount);
 

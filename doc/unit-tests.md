@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the digitalrupeed tests manually, launch src/test/test_digitalrupee .
+To run the rupeesd tests manually, launch src/test/test_rupees .
 
-To add more digitalrupeed tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more rupeesd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the digitalrupee-qt tests manually, launch src/qt/test/digitalrupee-qt_test
+To run the rupees-qt tests manually, launch src/qt/test/rupees-qt_test
 
-To add more digitalrupee-qt tests, add them to the `src/qt/test/` directory and
+To add more rupees-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

@@ -119,12 +119,12 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
 
     result.push_back(Pair("moneysupply",ValueFromAmount(blockindex->nMoneySupply)));
 
-    UniValue zdrsObj(UniValue::VOBJ);
+    UniValue zrsObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zdrsObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
+        zrsObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
-    zdrsObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.push_back(Pair("zDRSsupply", zdrsObj));
+    zrsObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
+    result.push_back(Pair("zRSsupply", zrsObj));
 
     return result;
 }
@@ -235,7 +235,7 @@ UniValue getrawmempool(const UniValue& params, bool fHelp)
             "{                           (json object)\n"
             "  \"transactionid\" : {       (json object)\n"
             "    \"size\" : n,             (numeric) transaction size in bytes\n"
-            "    \"fee\" : n,              (numeric) transaction fee in digitalrupee\n"
+            "    \"fee\" : n,              (numeric) transaction fee in rupees\n"
             "    \"time\" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT\n"
             "    \"height\" : n,           (numeric) block height when transaction entered pool\n"
             "    \"startingpriority\" : n, (numeric) priority when transaction entered pool\n"
@@ -309,17 +309,17 @@ UniValue getblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zDRSsupply\" :\n"
+            "  \"zRSsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zDRS denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zDRS denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zDRS denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zDRS denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zDRS denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zDRS denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zDRS denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zDRS denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zDRS denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zRS denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zRS denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zRS denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zRS denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zRS denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zRS denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zRS denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zRS denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zRS denominations\n"
             "  }\n"
             "}\n"
             "\nResult (for verbose=false):\n"
@@ -459,14 +459,14 @@ UniValue gettxout(const UniValue& params, bool fHelp)
             "{\n"
             "  \"bestblock\" : \"hash\",    (string) the block hash\n"
             "  \"confirmations\" : n,       (numeric) The number of confirmations\n"
-            "  \"value\" : x.xxx,           (numeric) The transaction value in digitalrupee\n"
+            "  \"value\" : x.xxx,           (numeric) The transaction value in rupees\n"
             "  \"scriptPubKey\" : {         (json object)\n"
             "     \"asm\" : \"code\",       (string) \n"
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, e.g. pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of digitalrupee addresses\n"
-            "     \"digitalrupeeaddress\"   	 	(string) digitalrupee address\n"
+            "     \"addresses\" : [          (array of string) array of rupees addresses\n"
+            "     \"rupeesaddress\"   	 	(string) rupees address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

@@ -12,8 +12,8 @@ When a "Transaction Lock" occurs the hash of the related transaction is broadcas
 * `zmqpubhashtxlock`: publishes the transaction hash when locked via SwiftX
 
 This mechanism has been integrated into Bitcore-Node-Rupees which allows for notification to be broadcast through Insight API in one of two ways:
-* WebSocket: [https://github.com/digitalrupeeproject/insight-api-digitalrupee#web-socket-api](https://github.com/digitalrupeeproject/insight-api-digitalrupee#web-socket-api) 
-* API: [https://github.com/digitalrupeeproject/insight-api-digitalrupee#swifttx-transactions](https://github.com/digitalrupeeproject/insight-api-digitalrupee#swifttx-transactions) 
+* WebSocket: [https://github.com/rupeesproject/insight-api-rupees#web-socket-api](https://github.com/rupeesproject/insight-api-rupees#web-socket-api) 
+* API: [https://github.com/rupeesproject/insight-api-rupees#swifttx-transactions](https://github.com/rupeesproject/insight-api-rupees#swifttx-transactions) 
 
 ####Command line option
 

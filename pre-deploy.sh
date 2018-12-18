@@ -32,12 +32,12 @@ elif [[ $HOST = "x86_64-apple-darwin11" ]]; then
 fi
 
 if [[ $HOST = "x86_64-apple-darwin11" ]]; then
-    find $TRAVIS_BUILD_DIR -type f | grep -i digitalrupee-qt.dmg$ | xargs -i cp {} $OUTDIR/bin
-    find $TRAVIS_BUILD_DIR -type f | grep -i digitalrupee-core.dmg$ | xargs -i cp {} $OUTDIR/bin
+    find $TRAVIS_BUILD_DIR -type f | grep -i rupees-qt.dmg$ | xargs -i cp {} $OUTDIR/bin
+    find $TRAVIS_BUILD_DIR -type f | grep -i rupees-core.dmg$ | xargs -i cp {} $OUTDIR/bin
 else
-    cp $TRAVIS_BUILD_DIR/src/qt/digitalrupee-qt $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/qt/digitalrupee-qt.exe $OUTDIR/bin/ || echo "no QT Wallet"
-    cp $TRAVIS_BUILD_DIR/src/digitalrupeed $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/digitalrupee.exe $OUTDIR/bin/
-    cp $TRAVIS_BUILD_DIR/src/digitalrupee-cli $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/digitalrupee-cli.exe $OUTDIR/bin/
+    cp $TRAVIS_BUILD_DIR/src/qt/rupees-qt $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/qt/rupees-qt.exe $OUTDIR/bin/ || echo "no QT Wallet"
+    cp $TRAVIS_BUILD_DIR/src/rupeesd $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/rupees.exe $OUTDIR/bin/
+    cp $TRAVIS_BUILD_DIR/src/rupees-cli $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/rupees-cli.exe $OUTDIR/bin/
     strip "$OUTDIR/bin"/* || echo "nothing to strip"
 fi
 

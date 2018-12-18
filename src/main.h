@@ -10,7 +10,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/digitalrupee-config.h"
+#include "config/rupees-config.h"
 #endif
 
 #include "amount.h"
@@ -432,9 +432,9 @@ libzerocoin::ZerocoinParams* GetZerocoinParams(int nHeight);
 bool IsTransactionInChain(const uint256& txId, int& nHeightTx, CTransaction& tx);
 bool IsTransactionInChain(const uint256& txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);
-void RecalculateZDRSSpent();
-void RecalculateZDRSMinted();
-bool RecalculatePHRSupply(int nHeightStart);
+void RecalculateZRSSpent();
+void RecalculateZRSMinted();
+bool RecalculateRSSupply(int nHeightStart);
 bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError);
 
 

@@ -137,7 +137,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../digitalrupee.qrc"/>
+  <include location="../rupees.qrc"/>
  </resources>
  <connections>
   <connection>

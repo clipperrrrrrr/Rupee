@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DIGITALRUPEE_MINTPOOL_H
-#define DIGITALRUPEE_MINTPOOL_H
+#ifndef RUPEES_MINTPOOL_H
+#define RUPEES_MINTPOOL_H
 
 #include <map>
 #include <list>
@@ -50,5 +50,5 @@ public:
 };
 
 
-#endif //DIGITALRUPEE_MINTPOOL_H
+#endif //RUPEES_MINTPOOL_H
 

@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: digitalrupeed.service
-Upstart: digitalrupeed.conf
-OpenRC:  digitalrupeed.openrc
-         digitalrupeed.openrcconf
-CentOS:  digitalrupeed.init
+SystemD: rupeesd.service
+Upstart: rupeesd.conf
+OpenRC:  rupeesd.openrc
+         rupeesd.openrcconf
+CentOS:  rupeesd.init
 
 have been made available to assist packagers in creating node packages here.
 

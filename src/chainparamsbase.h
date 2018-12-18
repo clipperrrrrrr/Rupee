@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between digitalrupee-cli and digitalrupeed)
+ * CBaseChainParams defines the base parameters (shared between rupees-cli and rupeesd)
  * of a given instance of the Rupees system.
  */
 class CBaseChainParams

@@ -4,11 +4,11 @@
 
 Rupees Core version 1.2.1 is now available from:
 
-  https://digitalrupee.io/
+  https://rupees.io/
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/digitalrupeeproject/digitalrupee/issues
+  https://github.com/rupeesproject/rupees/issues
 
 
 How to Upgrade
@@ -17,7 +17,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/Rupees-Qt (on Mac) or
-digitalrupeed/digitalrupee-qt (on Linux).
+rupeesd/rupees-qt (on Linux).
 
 
 1.2.1 changelog
@@ -28,7 +28,7 @@ Switched to PIVX Core version v3.0.6 - https://github.com/PIVX-Project/PIVX/rele
 - More accurate error messages
 - Reduction of debug log spam
 - Faster transaction searching algorithm
-- Fix for possible fork regarding zDRS
+- Fix for possible fork regarding zRS
 
 Also:
 - Disabled autominting in GUI (meyer9)

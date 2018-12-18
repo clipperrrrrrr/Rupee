@@ -50,7 +50,7 @@ void setupTXIDWidget(QValidatedLineEdit* widget, QWidget* parent);
 void setupTXIDIndexWidget(QValidatedLineEdit* widget, QWidget* parent);
 void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 
-// Parse "digitalrupee:" URI into recipient object, return true on successful parsing
+// Parse "rupees:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out);
 QString formatBitcoinURI(const SendCoinsRecipient& info);
@@ -116,7 +116,7 @@ bool isObscured(QWidget* w);
 // Open debug.log
 void openDebugLogfile();
 
-// Open digitalrupee.conf
+// Open rupees.conf
 void openConfigfile();
 
 // Open masternode.conf

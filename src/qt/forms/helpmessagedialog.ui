@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../digitalrupee.qrc">:/images/about</pixmap>
+      <pixmap resource="../rupees.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -97,7 +97,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../digitalrupee.qrc"/>
+  <include location="../rupees.qrc"/>
  </resources>
  <connections>
   <connection>

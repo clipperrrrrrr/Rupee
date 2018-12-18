@@ -5,8 +5,8 @@ CURDIR=$(cd $(dirname "$0"); pwd)
 # Get BUILDDIR and REAL_BITCOIND
 . "${CURDIR}/tests-config.sh"
 
-export DIGITALRUPEECLI=${BUILDDIR}/qa/pull-tester/run-bitcoin-cli
-export DIGITALRUPEED=${REAL_BITCOIND}
+export RUPEESCLI=${BUILDDIR}/qa/pull-tester/run-bitcoin-cli
+export RUPEESD=${REAL_BITCOIND}
 
 if [ "x${EXEEXT}" = "x.exe" ]; then
   echo "Win tests currently disabled"

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DIGITALRUPEE_ACCUMULATORS_H
-#define DIGITALRUPEE_ACCUMULATORS_H
+#ifndef RUPEES_ACCUMULATORS_H
+#define RUPEES_ACCUMULATORS_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -29,4 +29,4 @@ uint32_t ParseChecksum(uint256 nChecksum, libzerocoin::CoinDenomination denomina
 uint32_t GetChecksum(const CBigNum &bnValue);
 int GetChecksumHeight(uint32_t nChecksum, libzerocoin::CoinDenomination denomination);
 
-#endif //DIGITALRUPEE_ACCUMULATORS_H
+#endif //RUPEES_ACCUMULATORS_H

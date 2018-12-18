@@ -10,7 +10,7 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both digitalrupeed and digitalrupee-qt, to make it harder for attackers to
+ * for both rupeesd and rupees-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
 const std::string CLIENT_NAME("Rupees Core");

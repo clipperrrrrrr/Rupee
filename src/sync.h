@@ -190,7 +190,7 @@ typedef CMutexLock<CCriticalSection> CCriticalBlock;
         LeaveCritical();           \
     }
 
-class CSemadigitalrupee
+class CSemarupees
 {
 private:
     boost::condition_variable condition;
@@ -198,7 +198,7 @@ private:
     int value;
 
 public:
-    CSemadigitalrupee(int init) : value(init) {}
+    CSemarupees(int init) : value(init) {}
 
     void wait()
     {
@@ -228,11 +228,11 @@ public:
     }
 };
 
-/** RAII-style semadigitalrupee lock */
-class CSemadigitalrupeeGrant
+/** RAII-style semarupees lock */
+class CSemarupeesGrant
 {
 private:
-    CSemadigitalrupee* sem;
+    CSemarupees* sem;
     bool fHaveGrant;
 
 public:
@@ -259,7 +259,7 @@ public:
         return fHaveGrant;
     }
 
-    void MoveTo(CSemadigitalrupeeGrant& grant)
+    void MoveTo(CSemarupeesGrant& grant)
     {
         grant.Release();
         grant.sem = sem;
@@ -268,9 +268,9 @@ public:
         fHaveGrant = false;
     }
 
-    CSemadigitalrupeeGrant() : sem(NULL), fHaveGrant(false) {}
+    CSemarupeesGrant() : sem(NULL), fHaveGrant(false) {}
 
-    CSemadigitalrupeeGrant(CSemadigitalrupee& sema, bool fTry = false) : sem(&sema), fHaveGrant(false)
+    CSemarupeesGrant(CSemarupees& sema, bool fTry = false) : sem(&sema), fHaveGrant(false)
     {
         if (fTry)
             TryAcquire();
@@ -278,7 +278,7 @@ public:
             Acquire();
     }
 
-    ~CSemadigitalrupeeGrant()
+    ~CSemarupeesGrant()
     {
         Release();
     }

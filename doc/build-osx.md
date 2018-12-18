@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build digitalrupeed (headless client) for OSX.
+This guide will show you how to build rupeesd (headless client) for OSX.
 
 Notes
 -----
@@ -42,18 +42,18 @@ Instructions: Homebrew
         
         Note: On OSX versions lower than High Sierra, zeromq should be replaced with libzmq
 
-### Building `digitalrupeed`
+### Building `rupeesd`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/digitalrupeeproject/Rupees.git
+        git clone https://github.com/rupeesproject/Rupees.git
         cd Rupees
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
          export LDFLAGS+=-L/usr/local/opt/openssl/lib
         export CPPFLAGS+=-I/usr/local/opt/openssl/include
         
-3.  Build digitalrupeed:
+3.  Build rupeesd:
         
         chmod +x share/genbuild.sh autogen.sh 
         ./autogen.sh
@@ -66,7 +66,7 @@ Instructions: Homebrew
 
         make check
 
-5.  (Optional) You can also install digitalrupeed to your path:
+5.  (Optional) You can also install rupeesd to your path:
 
         make install
 
@@ -78,7 +78,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "digitalrupee-qt" as project name, enter src/qt as location
+4. Enter "rupees-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -88,11 +88,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `digitalrupeed` for your own use.
+You can ignore this section if you are building `rupeesd` for your own use.
 
-digitalrupeed/digitalrupee-cli binaries are not included in the digitalrupee-Qt.app bundle.
+rupeesd/rupees-cli binaries are not included in the rupees-Qt.app bundle.
 
-If you are building `digitalrupeed` or `digitalrupee-qt` for others, your build machine should be set up
+If you are building `rupeesd` or `rupees-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -107,14 +107,14 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./digitalrupeed`, provided that you are still in the `src`
+It's now available at `./rupeesd`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./digitalrupeed` to get the filename where it should be put, or just try these
+Run `./rupeesd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=digitalrupeerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Rupees/digitalrupee.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Rupees/digitalrupee.conf"
+    echo -e "rpcuser=rupeesrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Rupees/rupees.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Rupees/rupees.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
@@ -125,9 +125,9 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./digitalrupeed -daemon # to start the digitalrupee daemon.
-    ./digitalrupee-cli --help  # for a list of command-line options.
-    ./digitalrupee-cli help    # When the daemon is running, to get a list of RPC commands
+    ./rupeesd -daemon # to start the rupees daemon.
+    ./rupees-cli --help  # for a list of command-line options.
+    ./rupees-cli help    # When the daemon is running, to get a list of RPC commands
     
 Troubleshooting:<a name="trouble"></a>
 ---------
@@ -180,7 +180,7 @@ Next, switch into your Downloads folder:
 
 The next step is to download the current version of the wallet from Github and go into that directory:
 
-```git clone https://github.com/digitalrupeeproject/digitalrupee.git```
+```git clone https://github.com/rupeesproject/rupees.git```
 ```cd Rupees```
 
 Now set some configuration flags:
@@ -211,8 +211,8 @@ Once the build is complete, switch into the src/qt subdirectory:
 
 And there you have your wallet – you can start it by running:
 
-```./digitalrupee-qt```
+```./rupees-qt```
 
 You can move the wallet app to another more permanent location. If you have not moved it and want to start your wallet in the future, open Terminal and run this command:
 
-~/Downloads/Rupees/src/qt/digitalrupee-qt
+~/Downloads/Rupees/src/qt/rupees-qt

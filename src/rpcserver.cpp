@@ -353,37 +353,37 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* Rupees features */
-        {"digitalrupee", "masternode", &masternode, true, true, false},
-        {"digitalrupee", "listmasternodes", &listmasternodes, true, true, false},
-        {"digitalrupee", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"digitalrupee", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"digitalrupee", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"digitalrupee", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"digitalrupee", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"digitalrupee", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"digitalrupee", "masternodedebug", &masternodedebug, true, true, false},
-        {"digitalrupee", "startmasternode", &startmasternode, true, true, false},
-        {"digitalrupee", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"digitalrupee", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"digitalrupee", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"digitalrupee", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"digitalrupee", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"digitalrupee", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"digitalrupee", "mnbudget", &mnbudget, true, true, false},
-        {"digitalrupee", "preparebudget", &preparebudget, true, true, false},
-        {"digitalrupee", "submitbudget", &submitbudget, true, true, false},
-        {"digitalrupee", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"digitalrupee", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"digitalrupee", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"digitalrupee", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"digitalrupee", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"digitalrupee", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"digitalrupee", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"digitalrupee", "checkbudgets", &checkbudgets, true, true, false},
-        {"digitalrupee", "mnsync", &mnsync, true, true, false},
-        {"digitalrupee", "spork", &spork, true, true, false},
-        {"digitalrupee", "getpoolinfo", &getpoolinfo, true, true, false},
-        {"digitalrupee", "makekeypair", &makekeypair, true, true, false},
+        {"rupees", "masternode", &masternode, true, true, false},
+        {"rupees", "listmasternodes", &listmasternodes, true, true, false},
+        {"rupees", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"rupees", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"rupees", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"rupees", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"rupees", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"rupees", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"rupees", "masternodedebug", &masternodedebug, true, true, false},
+        {"rupees", "startmasternode", &startmasternode, true, true, false},
+        {"rupees", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"rupees", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"rupees", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"rupees", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"rupees", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"rupees", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"rupees", "mnbudget", &mnbudget, true, true, false},
+        {"rupees", "preparebudget", &preparebudget, true, true, false},
+        {"rupees", "submitbudget", &submitbudget, true, true, false},
+        {"rupees", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"rupees", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"rupees", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"rupees", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"rupees", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"rupees", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"rupees", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"rupees", "checkbudgets", &checkbudgets, true, true, false},
+        {"rupees", "mnsync", &mnsync, true, true, false},
+        {"rupees", "spork", &spork, true, true, false},
+        {"rupees", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"rupees", "makekeypair", &makekeypair, true, true, false},
 #ifdef ENABLE_WALLET
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -450,8 +450,8 @@ static const CRPCCommand vRPCCommands[] =
         {"zerocoin", "exportzerocoins", &exportzerocoins, false, false, true},
         {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false, false, true},
         {"zerocoin", "getspentzerocoinamount", &getspentzerocoinamount, false, false, false},
-        {"zerocoin", "getzdrsseed", &getzdrsseed, false, false, true},
-        {"zerocoin", "setzdrsseed", &setzdrsseed, false, false, true}
+        {"zerocoin", "getzrsseed", &getzrsseed, false, false, true},
+        {"zerocoin", "setzrsseed", &setzrsseed, false, false, true}
 
 #endif // ENABLE_WALLET
 };
@@ -615,7 +615,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> digitalrupee-cli " + methodname + " " + args + "\n";
+    return "> rupees-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

@@ -59,8 +59,8 @@ public:
      */
     enum Unit {
         DRS,
-        mPHR,
-        uPHR
+        mRS,
+        uRS
     };
 
     enum SeparatorStyle {

@@ -368,7 +368,7 @@ Please be patient after clicking import.</string>
                 <string>Add a Raw Input</string>
                </property>
                <property name="icon">
-                <iconset resource="../digitalrupee.qrc">
+                <iconset resource="../rupees.qrc">
                  <normaloff>:/css/default</normaloff>:/css/default</iconset>
                </property>
               </widget>
@@ -811,7 +811,7 @@ txScrollArea:{
   </layout>
  </widget>
  <resources>
-  <include location="../digitalrupee.qrc"/>
+  <include location="../rupees.qrc"/>
  </resources>
  <connections/>
 </ui>

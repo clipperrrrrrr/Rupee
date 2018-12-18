@@ -11,7 +11,7 @@
 static const int MODEL_UPDATE_DELAY = 1000;
 
 /* AskPassphraseDialog -- Maximum passphrase length */
-static const int MAX_PASSPHRASE_SIZE = 1024;
+static const int MAX_PASSRSASE_SIZE = 1024;
 
 /* Rupees GUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 32;
@@ -51,7 +51,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "Rupees"
-#define QAPP_ORG_DOMAIN "digitalrupee.org"
+#define QAPP_ORG_DOMAIN "rupees.org"
 #define QAPP_APP_NAME_DEFAULT "Rupees-Qt"
 #define QAPP_APP_NAME_TESTNET "Rupees-Qt-testnet"
 

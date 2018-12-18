@@ -1116,7 +1116,7 @@
                       <item>
                        <widget class="QRadioButton" name="radioCustomPerKilobyte">
                         <property name="toolTip">
-                         <string>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
+                         <string>If the custom fee is set to 1000 uRSs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uRSs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uRSs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
                         </property>
                         <property name="text">
                          <string>per kilobyte</string>
@@ -1132,7 +1132,7 @@
                       <item>
                        <widget class="QRadioButton" name="radioCustomAtLeast">
                         <property name="toolTip">
-                         <string>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
+                         <string>If the custom fee is set to 1000 uRSs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uRSs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uRSs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
                         </property>
                         <property name="text">
                          <string>total at least</string>
@@ -1614,7 +1614,7 @@
               <number>3</number>
              </property>
              <item>
-              <widget class="QCheckBox" name="checkzDRS">
+              <widget class="QCheckBox" name="checkzRS">
                <property name="enabled">
                 <bool>false</bool>
                </property>
@@ -1691,7 +1691,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../digitalrupee.qrc"/>
+  <include location="../rupees.qrc"/>
  </resources>
  <connections/>
  <buttongroups>

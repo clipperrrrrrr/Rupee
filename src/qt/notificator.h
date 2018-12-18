@@ -6,7 +6,7 @@
 #define BITCOIN_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/digitalrupee-config.h"
+#include "config/rupees-config.h"
 #endif
 
 #include <QIcon>

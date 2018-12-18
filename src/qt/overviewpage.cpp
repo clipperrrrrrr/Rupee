@@ -38,7 +38,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::DRS)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::RS)
     {
     }
 
@@ -167,7 +167,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sPHRPercentage, QString& szDRSPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sRSPercentage, QString& szRSPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -186,8 +186,8 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
 
     double dPercentage = 100.0 - dzPercentage;
     
-    szDRSPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sPHRPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    szRSPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
+    sRSPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
     
 }
 
@@ -211,12 +211,12 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nLockedBalance = pwalletMain->GetLockedCoins();
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
-    // DRS Balance
+    // RS Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount phrAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance + watchImmatureBalance;    
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
-    // zDRS Balance
+    // zRS Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
     // Percentages
     QString szPercentage = "";
@@ -226,7 +226,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = phrAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // DRS labels
+    // RS labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnitComma(nDisplayUnit, phrAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnitComma(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnitComma(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -240,7 +240,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnitComma(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnitComma(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // zDRS labels
+    // zRS labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnitComma(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnitComma(nDisplayUnit, unconfirmedZerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceMature->setText(BitcoinUnits::floorHtmlWithUnitComma(nDisplayUnit, matureZerocoinBalance, false, BitcoinUnits::separatorAlways));
@@ -251,19 +251,19 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnitComma(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelPHRPercent->setText(sPercentage);
-    ui->labelzDRSPercent->setText(szPercentage);
+    ui->labelRSPercent->setText(sPercentage);
+    ui->labelzRSPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of zDRS.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
+    QString automintHelp = tr("Current percentage of zRS.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
     bool fEnableZeromint = GetBoolArg("-enablezeromint", false);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
         automintHelp += tr("AutoMint is currently enabled and set to ") + QString::number(nZeromintPercentage) + "%.\n";
-        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in digitalrupee.conf.");
+        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in rupees.conf.");
     }
     else {
-        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in digitalrupee.conf");
+        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in rupees.conf");
     }
 
     // Only show most balances if they are non-zero for the sake of simplicity
@@ -272,39 +272,39 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool showSumAvailable = settingShowAllBalances || sumTotalBalance != availableTotalBalance;
     ui->labelBalanceTextz->setVisible(showSumAvailable);
     ui->labelBalancez->setVisible(showSumAvailable);
-    bool showPHRAvailable = settingShowAllBalances || phrAvailableBalance != nTotalBalance;
-    bool showWatchOnlyPHRAvailable = watchOnlyBalance != nTotalWatchBalance;
-    bool showPHRPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyPHRPending = watchUnconfBalance != 0;
-    bool showPHRLocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyPHRLocked = nWatchOnlyLockedBalance != 0;
+    bool showRSAvailable = settingShowAllBalances || phrAvailableBalance != nTotalBalance;
+    bool showWatchOnlyRSAvailable = watchOnlyBalance != nTotalWatchBalance;
+    bool showRSPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlyRSPending = watchUnconfBalance != 0;
+    bool showRSLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlyRSLocked = nWatchOnlyLockedBalance != 0;
     bool showImmature = settingShowAllBalances || immatureBalance != 0;
     bool showWatchOnlyImmature = watchImmatureBalance != 0;
     bool showWatchOnly = nTotalWatchBalance != 0;
-    ui->labelBalance->setVisible(showPHRAvailable || showWatchOnlyPHRAvailable);
-    ui->labelBalanceText->setVisible(showPHRAvailable || showWatchOnlyPHRAvailable);
-    ui->labelWatchAvailable->setVisible(showPHRAvailable && showWatchOnly);
-    ui->labelUnconfirmed->setVisible(showPHRPending || showWatchOnlyPHRPending);
-    ui->labelPendingText->setVisible(showPHRPending || showWatchOnlyPHRPending);
-    ui->labelWatchPending->setVisible(showPHRPending && showWatchOnly);
-    ui->labelLockedBalance->setVisible(showPHRLocked || showWatchOnlyPHRLocked);
-    ui->labelLockedBalanceText->setVisible(showPHRLocked || showWatchOnlyPHRLocked);
-    ui->labelWatchLocked->setVisible(showPHRLocked && showWatchOnly);
+    ui->labelBalance->setVisible(showRSAvailable || showWatchOnlyRSAvailable);
+    ui->labelBalanceText->setVisible(showRSAvailable || showWatchOnlyRSAvailable);
+    ui->labelWatchAvailable->setVisible(showRSAvailable && showWatchOnly);
+    ui->labelUnconfirmed->setVisible(showRSPending || showWatchOnlyRSPending);
+    ui->labelPendingText->setVisible(showRSPending || showWatchOnlyRSPending);
+    ui->labelWatchPending->setVisible(showRSPending && showWatchOnly);
+    ui->labelLockedBalance->setVisible(showRSLocked || showWatchOnlyRSLocked);
+    ui->labelLockedBalanceText->setVisible(showRSLocked || showWatchOnlyRSLocked);
+    ui->labelWatchLocked->setVisible(showRSLocked && showWatchOnly);
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelWatchImmature->setVisible(showImmature && showWatchOnly); // show watch-only immature balance
-    bool showzDRSAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzDRSUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzDRSImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    ui->labelzBalanceMature->setVisible(showzDRSAvailable);
-    ui->labelzBalanceMatureText->setVisible(showzDRSAvailable);
-    ui->labelzBalanceUnconfirmed->setVisible(showzDRSUnconfirmed);
-    ui->labelzBalanceUnconfirmedText->setVisible(showzDRSUnconfirmed);
-    ui->labelzBalanceImmature->setVisible(showzDRSImmature);
-    ui->labelzBalanceImmatureText->setVisible(showzDRSImmature);
+    bool showzRSAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzRSUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    bool showzRSImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    ui->labelzBalanceMature->setVisible(showzRSAvailable);
+    ui->labelzBalanceMatureText->setVisible(showzRSAvailable);
+    ui->labelzBalanceUnconfirmed->setVisible(showzRSUnconfirmed);
+    ui->labelzBalanceUnconfirmedText->setVisible(showzRSUnconfirmed);
+    ui->labelzBalanceImmature->setVisible(showzRSImmature);
+    ui->labelzBalanceImmatureText->setVisible(showzRSImmature);
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
-    ui->labelPHRPercent->setVisible(showPercentages);
-    ui->labelzDRSPercent->setVisible(showPercentages);
+    ui->labelRSPercent->setVisible(showPercentages);
+    ui->labelzRSPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
 
@@ -375,7 +375,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("DRS")
+    // update the display unit, to not use the default ("RS")
     updateDisplayUnit();
 }
 

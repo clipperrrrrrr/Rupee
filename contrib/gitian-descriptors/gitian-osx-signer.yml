@@ -1,5 +1,5 @@
 ---
-name: "digitalrupee-dmg-signer"
+name: "rupees-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/digitalrupeeproject/digitalrupee-detached-sigs.git"
+- "url": "https://github.com/rupeesproject/rupees-detached-sigs.git"
   "dir": "signature"
 files:
-- "digitalrupee-osx-unsigned.tar.gz"
+- "rupees-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,8 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=digitalrupee-osx-unsigned.tar.gz
-  SIGNED=digitalrupee-osx-signed.dmg
+  UNSIGNED=rupees-osx-unsigned.tar.gz
+  SIGNED=rupees-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

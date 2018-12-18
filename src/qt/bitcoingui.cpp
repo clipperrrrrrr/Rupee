@@ -335,7 +335,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     receiveCoinsIcon.addFile(":/icons/receiving_addresses_off",QSize(40,40),QIcon::Normal,QIcon::Off);
 
     receiveCoinsAction = new QAction(QIcon(), tr("&Receive"), this);
-    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and digitalrupee: URIs)"));
+    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and rupees: URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setIcon(receiveCoinsIcon);
@@ -367,7 +367,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     privacyIcon.addFile(":/icons/privacy_off",QSize(40,40),QIcon::Normal,QIcon::Off);
 
     privacyAction = new QAction(QIcon(":/icons/privacy"), tr("&Privacy"), this);
-    privacyAction->setStatusTip(tr("Privacy Actions for zDRS"));
+    privacyAction->setStatusTip(tr("Privacy Actions for zRS"));
     privacyAction->setToolTip(privacyAction->statusTip());
     privacyAction->setCheckable(true);
     privacyAction->setIcon(privacyIcon);

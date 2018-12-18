@@ -80,15 +80,15 @@ noinst_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += digitalrupeed
+  bin_PROGRAMS += rupeesd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += digitalrupee-cli digitalrupee-tx
+  bin_PROGRAMS += rupees-cli rupees-tx
 endif
 
 .PHONY: FORCE
-# digitalrupee core #
+# rupees core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -194,8 +194,8 @@ BITCOIN_CORE_H = \
   wallet.h \
   wallet_ismine.h \
   walletdb.h \
-  zdrstracker.h \
-  zdrswallet.h \
+  zrstracker.h \
+  zrswallet.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -207,7 +207,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between digitalrupeed and digitalrupee-qt
+# server: shared between rupeesd and rupees-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -253,7 +253,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between digitalrupeed and digitalrupee-qt, but only linked
+# wallet: shared between rupeesd and rupees-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -281,8 +281,8 @@ libbitcoin_wallet_a_SOURCES = \
   wallet.cpp \
   wallet_ismine.cpp \
   walletdb.cpp \
-  zdrswallet.cpp \
-  zdrstracker.cpp \
+  zrswallet.cpp \
+  zrstracker.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
@@ -347,7 +347,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between digitalrupeed, and digitalrupee-qt and non-server tools
+# common: shared between rupeesd, and rupees-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -414,7 +414,7 @@ if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between digitalrupee-cli and digitalrupee-qt
+# cli: shared between rupees-cli and rupees-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -424,16 +424,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# digitalrupeed binary #
-digitalrupeed_SOURCES = digitalrupeed.cpp
-digitalrupeed_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-digitalrupeed_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-digitalrupeed_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# rupeesd binary #
+rupeesd_SOURCES = rupeesd.cpp
+rupeesd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+rupeesd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+rupeesd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-digitalrupeed_SOURCES += digitalrupeed-res.rc
+rupeesd_SOURCES += rupeesd-res.rc
 endif
-digitalrupeed_LDADD = \
+rupeesd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -446,38 +446,38 @@ digitalrupeed_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-digitalrupeed_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+rupeesd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# digitalrupee-cli binary #
-digitalrupee_cli_SOURCES = digitalrupee-cli.cpp
-digitalrupee_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-digitalrupee_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-digitalrupee_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# rupees-cli binary #
+rupees_cli_SOURCES = rupees-cli.cpp
+rupees_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+rupees_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+rupees_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-digitalrupee_cli_SOURCES += digitalrupee-cli-res.rc
+rupees_cli_SOURCES += rupees-cli-res.rc
 endif
 
-digitalrupee_cli_LDADD = \
+rupees_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-digitalrupee_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+rupees_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# digitalrupee-tx binary #
-digitalrupee_tx_SOURCES = digitalrupee-tx.cpp
-digitalrupee_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-digitalrupee_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-digitalrupee_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# rupees-tx binary #
+rupees_tx_SOURCES = rupees-tx.cpp
+rupees_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+rupees_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+rupees_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-digitalrupee_tx_SOURCES += digitalrupee-tx-res.rc
+rupees_tx_SOURCES += rupees-tx-res.rc
 endif
 
-digitalrupee_tx_LDADD = \
+rupees_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -485,7 +485,7 @@ digitalrupee_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-digitalrupee_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+rupees_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

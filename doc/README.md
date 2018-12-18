@@ -3,7 +3,7 @@ Rupees Core
 
 Setup
 ---------------------
-[Rupees Core](http://digitalrupee.org/wallet) is the original Rupees client and it builds the backbone of the network. However, it downloads and stores the entire history of Rupees transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Rupees Core](http://rupees.org/wallet) is the original Rupees client and it builds the backbone of the network. However, it downloads and stores the entire history of Rupees transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -13,12 +13,12 @@ The following are some helpful notes on how to run Rupees on your native platfor
 
 Unpack the files into a directory and run:
 
-- bin/32/digitalrupee-qt (GUI, 32-bit) or bin/32/digitalrupeed (headless, 32-bit)
-- bin/64/digitalrupee-qt (GUI, 64-bit) or bin/64/digitalrupeed (headless, 64-bit)
+- bin/32/rupees-qt (GUI, 32-bit) or bin/32/rupeesd (headless, 32-bit)
+- bin/64/rupees-qt (GUI, 64-bit) or bin/64/rupeesd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run digitalrupee-qt.exe.
+Unpack the files into a directory, and then run rupees-qt.exe.
 
 ### OSX
 
@@ -28,8 +28,8 @@ Drag Rupees-Qt to your applications folder, and then run Rupees-Qt.
 
 * See the documentation at the [Rupees Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Rupees Forum](http://forum.digitalrupee.org/).
-* Join one of our Slack groups [Rupees Slack Groups](https://digitalrupee.org/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Rupees Forum](http://forum.rupees.org/).
+* Join one of our Slack groups [Rupees Slack Groups](https://rupees.org/slack-logins/).
 * Join our Discord server [Discord Server](https://discord.gg/dTRhamf)
 
 Building
@@ -42,7 +42,7 @@ The following are developer notes on how to build Rupees on your native platform
 
 Development
 ---------------------
-The Rupees repo's [root README](https://github.com/digitalrupeeproject/Rupees/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Rupees repo's [root README](https://github.com/rupeesproject/Rupees/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,8 +56,8 @@ The Rupees repo's [root README](https://github.com/digitalrupeeproject/Rupees/bl
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Rupees](http://forum.digitalrupee.org/) forum.
-* Join the [Rupees-Dev](https://digitalrupee-dev.slack.com/) Slack group ([Sign-Up](https://digitalrupee-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Rupees](http://forum.rupees.org/) forum.
+* Join the [Rupees-Dev](https://rupees-dev.slack.com/) Slack group ([Sign-Up](https://rupees-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

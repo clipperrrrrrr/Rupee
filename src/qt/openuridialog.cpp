@@ -19,7 +19,7 @@ OpenURIDialog::OpenURIDialog(QWidget* parent) : QDialog(parent),
     ui->setupUi(this);
     ui->uriEdit->setAttribute(Qt::WA_MacShowFocusRect, 0);
 #if QT_VERSION >= 0x040700
-    ui->uriEdit->setPlaceholderText("digitalrupee:");
+    ui->uriEdit->setPlaceholderText("rupees:");
 #endif
 }
 
@@ -50,5 +50,5 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if (filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
-    ui->uriEdit->setText("digitalrupee:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+    ui->uriEdit->setText("rupees:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
 }

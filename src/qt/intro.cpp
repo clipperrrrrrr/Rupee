@@ -183,8 +183,8 @@ bool Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the digitalrupee.conf file in the default data directory
-     * (to be consistent with digitalrupeed behavior)
+     * override -datadir in the rupees.conf file in the default data directory
+     * (to be consistent with rupeesd behavior)
      */
     if (dataDir != getDefaultDataDirectory())
         SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

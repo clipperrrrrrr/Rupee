@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DIGITALRUPEE_CSPORKDB_H
-#define DIGITALRUPEE_CSPORKDB_H
+#ifndef RUPEES_CSPORKDB_H
+#define RUPEES_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //DIGITALRUPEE_CSPORKDB_H
+#endif //RUPEES_CSPORKDB_H

@@ -1,8 +1,8 @@
-Source: digitalrupee
+Source: rupees
 Section: utils
 Priority: optional
-Maintainer: Julian Meyer <julian@digitalrupee.io>
-Uploaders: Julian Meyer <julian@digitalrupee.io>
+Maintainer: Julian Meyer <julian@rupees.io>
+Uploaders: Julian Meyer <julian@rupees.io>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -22,11 +22,11 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.digitalrupee.org
-Vcs-Git: git://github.com/digitalrupeeproject/Rupees.git
-Vcs-Browser: http://github.com/digitalrupeeproject/Rupees
+Homepage: http://www.rupees.org
+Vcs-Git: git://github.com/rupeesproject/Rupees.git
+Vcs-Browser: http://github.com/rupeesproject/Rupees
 
-Package: digitalrupeed
+Package: rupeesd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -39,10 +39,10 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, digitalrupeed, and the CLI tool
- digitalrupee-cli to interact with the daemon.
+ This package provides the daemon, rupeesd, and the CLI tool
+ rupees-cli to interact with the daemon.
 
-Package: digitalrupee-qt
+Package: rupees-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI

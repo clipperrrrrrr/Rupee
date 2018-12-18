@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DIGITALRUPEE_ZEROCOIN_H
-#define DIGITALRUPEE_ZEROCOIN_H
+#ifndef RUPEES_ZEROCOIN_H
+#define RUPEES_ZEROCOIN_H
 
 #include "amount.h"
 #include "limits.h"
@@ -247,4 +247,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //DIGITALRUPEE_ZEROCOIN_H
+#endif //RUPEES_ZEROCOIN_H

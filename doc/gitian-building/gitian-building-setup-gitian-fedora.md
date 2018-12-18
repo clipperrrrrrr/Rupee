@@ -75,13 +75,13 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user `gitianuser` not for `root`.
 
-Clone the git repositories for digitalrupee and Gitian.
+Clone the git repositories for rupees and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/digitalrupee/digitalrupee
-git clone https://github.com/digitalrupeeproject/gitian.sigs.git
-git clone https://github.com/digitalrupeeproject/digitalrupee-detached-sigs.git
+git clone https://github.com/rupees/rupees
+git clone https://github.com/rupeesproject/gitian.sigs.git
+git clone https://github.com/rupeesproject/rupees-detached-sigs.git
 ```
 
 Setting up the Gitian image

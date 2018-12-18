@@ -258,16 +258,16 @@ bool CCryptoKeyStore::Unlock(const CKeyingMaterial& vMasterKeyIn)
 
             uint256 nSeed;
             if (!GetDeterministicSeed(hashSeed, nSeed)) {
-                return error("Failed to read zDRS seed from DB. Wallet is probably corrupt.");
+                return error("Failed to read zRS seed from DB. Wallet is probably corrupt.");
             }
             pwalletMain->zwalletMain->SetMasterSeed(nSeed, false);
         } else {
-            // First time this wallet has been unlocked with dzDRS
+            // First time this wallet has been unlocked with dzRS
             // Borrow random generator from the key class so that we don't have to worry about randomness
             CKey key;
             key.MakeNewKey(true);
             uint256 seed = key.GetPrivKey_256();
-            LogPrintf("%s: first run of zDRS wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
+            LogPrintf("%s: first run of zRS wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
             pwalletMain->zwalletMain->SetMasterSeed(seed, true);
             pwalletMain->zwalletMain->GenerateMintPool();
         }
@@ -388,7 +388,7 @@ bool CCryptoKeyStore::AddDeterministicSeed(const uint256& seed)
             //attempt encrypt
             if (EncryptSecret(vMasterKey, kmSeed, hashSeed, vchSeedSecret)) {
                 //write to wallet with hashSeed as unique key
-                if (db.WriteZDRSSeed(hashSeed, vchSeedSecret)) {
+                if (db.WriteZRSSeed(hashSeed, vchSeedSecret)) {
                     return true;
                 }
             }
@@ -396,12 +396,12 @@ bool CCryptoKeyStore::AddDeterministicSeed(const uint256& seed)
         }
         strErr = "save since wallet is locked";
     } else { //wallet not encrypted
-        if (db.WriteZDRSSeed(hashSeed, ToByteVector(seed))) {
+        if (db.WriteZRSSeed(hashSeed, ToByteVector(seed))) {
             return true;
         }
-        strErr = "save zdrsseed to wallet";
+        strErr = "save zrsseed to wallet";
     }
-                //the use case for this is no password set seed, mint dzDRS,
+                //the use case for this is no password set seed, mint dzRS,
 
     return error("s%: Failed to %s\n", __func__, strErr);
 }
@@ -416,7 +416,7 @@ bool CCryptoKeyStore::GetDeterministicSeed(const uint256& hashSeed, uint256& see
 
             vector<unsigned char> vchCryptedSeed;
             //read encrypted seed
-            if (db.ReadZDRSSeed(hashSeed, vchCryptedSeed)) {
+            if (db.ReadZRSSeed(hashSeed, vchCryptedSeed)) {
                 uint256 seedRetrieved = uint256(ReverseEndianString(HexStr(vchCryptedSeed)));
                 //this checks if the hash of the seed we just read matches the hash given, meaning it is not encrypted
                 //the use case for this is when not crypted, seed is set, then password set, the seed not yet crypted in memory
@@ -437,7 +437,7 @@ bool CCryptoKeyStore::GetDeterministicSeed(const uint256& hashSeed, uint256& see
     } else {
         vector<unsigned char> vchSeed;
         // wallet not crypted
-        if (db.ReadZDRSSeed(hashSeed, vchSeed)) {
+        if (db.ReadZRSSeed(hashSeed, vchSeed)) {
             seedOut = uint256(ReverseEndianString(HexStr(vchSeed)));
             return true;
         }
