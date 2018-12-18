@@ -160,7 +160,7 @@ public:
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-        genesis.nVersion = 4;
+        genesis.nVersion = 1;
         genesis.nTime = 1545146905;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 12345;
@@ -282,7 +282,7 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1545103494;
-        genesis.nNonce = 311676;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
