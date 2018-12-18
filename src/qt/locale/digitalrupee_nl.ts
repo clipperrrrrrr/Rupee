@@ -607,7 +607,7 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore Kern</translation>
     </message>
     <message>
@@ -635,11 +635,11 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
+        <source>&amp;About Rupees Core</source>
         <translation>&amp;Over Phore Kern</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
+        <source>Show information about Rupees Core</source>
         <translation>Toon informatie over Phore Kern</translation>
     </message>
     <message>
@@ -695,12 +695,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</source>
-        <translation>Toon het DigitalRupee Core help bericht om een ​​lijst te krijgen met mogelijke Phore command line opties</translation>
+        <source>Show the Rupees Core help message to get a list with possible Phore command-line options</source>
+        <translation>Toon het Rupees Core help bericht om een ​​lijst te krijgen met mogelijke Phore command line opties</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>DigitalRupee Core client</translation>
+        <source>Rupees Core client</source>
+        <translation>Rupees Core client</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Phore network</source>
@@ -1269,7 +1269,7 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore Kern</translation>
     </message>
     <message>
@@ -1277,8 +1277,8 @@ MultiSend: %1</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About DigitalRupee Core</source>
-        <translation>Over DigitalRupee Core</translation>
+        <source>About Rupees Core</source>
+        <translation>Over Rupees Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1324,16 +1324,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to DigitalRupee Core.</source>
-        <translation>Welkom bij DigitalRupee Core</translation>
+        <source>Welcome to Rupees Core.</source>
+        <translation>Welkom bij Rupees Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar DigitalRupee Core zijn gegevens opslaat.</translation>
+        <source>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</source>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Rupees Core zijn gegevens opslaat.</translation>
     </message>
     <message>
-        <source>DigitalRupee Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>DigitalRupee Core zal een kopie van de Phore blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee wordt ook in deze map opgeslagen.</translation>
+        <source>Rupees Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Rupees Core zal een kopie van de Phore blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee wordt ook in deze map opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1344,7 +1344,7 @@ MultiSend: %1</translation>
         <translation>Gebruik een aangepaste datafolder:</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore Kern</translation>
     </message>
     <message>
@@ -2721,8 +2721,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Fout bij het lezen van het masternode configuratiebestand: %1</translation>
     </message>
     <message>
-        <source>DigitalRupee Core didn&apos;t yet exit safely...</source>
-        <translation>DigitalRupee Core is nog niet veilig afgesloten...</translation>
+        <source>Rupees Core didn&apos;t yet exit safely...</source>
+        <translation>Rupees Core is nog niet veilig afgesloten...</translation>
     </message>
 </context>
 <context>
@@ -3692,8 +3692,8 @@ Wees alsjeblieft geduldig...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>DigitalRupee Core is shutting down...</source>
-        <translation>DigitalRupee Core is aan het afsluiten...</translation>
+        <source>Rupees Core is shutting down...</source>
+        <translation>Rupees Core is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3842,7 +3842,7 @@ Wees alsjeblieft geduldig...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore Kern</translation>
     </message>
     <message>
@@ -3858,7 +3858,7 @@ Wees alsjeblieft geduldig...</translation>
         <translation>De Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>The DigitalRupee Core developers</source>
+        <source>The Rupees Core developers</source>
         <translation>De Phore Kernontwikkelaars</translation>
     </message>
     <message>
@@ -4564,8 +4564,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Bind naar het opgegeven adres om te luisteren naar JSON-RPC verbindingen. Gebruik [host]:poort notatie voor IPv6. Deze optie kan meerdere keren worden opgegeven (standaard: bind aan alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. DigitalRupee Core is probably already running.</source>
-        <translation>Kan geen vergrendeling op data directory %s verkrijgen. DigitalRupee Core loopt waarschijnlijk al.</translation>
+        <source>Cannot obtain a lock on data directory %s. Rupees Core is probably already running.</source>
+        <translation>Kan geen vergrendeling op data directory %s verkrijgen. Rupees Core loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4732,8 +4732,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in de OpenSSL Toolkit &lt;https://www.openssl.org/&gt; en cryptografische software geschreven door Eric Young en UPnP software geschreven door Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. DigitalRupee Core is probably already running.</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer. DigitalRupee Core loopt waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. Rupees Core is probably already running.</source>
+        <translation>Niet mogelijk te binden aan %s op deze computer. Rupees Core loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4760,8 +4760,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong DigitalRupee Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt DigitalRupee Core niet goed.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Rupees Core will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt Rupees Core niet goed.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4980,8 +4980,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Error tijdens het laden van wallet.dat: Portemonnee corrupt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of DigitalRupee Core</source>
-        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van DigitalRupee Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Rupees Core</source>
+        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van Rupees Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5092,8 +5092,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. DigitalRupee Core is shutting down.</source>
-        <translation>Initialisatie saniteitscontrole mislukt. DigitalRupee Core wordt afgesloten.</translation>
+        <source>Initialization sanity check failed. Rupees Core is shutting down.</source>
+        <translation>Initialisatie saniteitscontrole mislukt. Rupees Core wordt afgesloten.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5718,8 +5718,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Portemonnee is vergrendeld.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart DigitalRupee Core to complete</source>
-        <translation>Wallet moest worden herschreven: start DigitalRupee Core opnieuw om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Rupees Core to complete</source>
+        <translation>Wallet moest worden herschreven: start Rupees Core opnieuw om te voltooien</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5866,7 +5866,7 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;Phore Alert&quot; admin@foo
         <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The DigitalRupee Core Developers</source>
+        <source>Copyright (C) 2015-%i The Rupees Core Developers</source>
         <translation>Copyright (C) 2015-%i The Phore Kernontwikkelaars</translation>
     </message>
 	   <message>

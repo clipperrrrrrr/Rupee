@@ -105,7 +105,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// DigitalRupee only features
+// Rupees only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -237,7 +237,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "digitalrupee" is a composite category enabling all DigitalRupee-related debug output
+            // "digitalrupee" is a composite category enabling all Rupees-related debug output
             if (ptrCategory->count(string("digitalrupee"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
@@ -544,13 +544,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\DigitalRupee
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\DigitalRupee
-// Mac: ~/Library/Application Support/DigitalRupee
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Rupees
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Rupees
+// Mac: ~/Library/Application Support/Rupees
 // Unix: ~/.digitalrupee
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "DigitalRupee";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Rupees";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -562,7 +562,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "DigitalRupee";
+    return pathRet / "Rupees";
 #else
     // Unix
     return pathRet / ".digitalrupee";

@@ -598,8 +598,8 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Send coins to a Phore address</source>
@@ -618,12 +618,12 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
-        <translation>&amp;O DigitalRupee Core</translation>
+        <source>&amp;About Rupees Core</source>
+        <translation>&amp;O Rupees Core</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
-        <translation>Zobraz informace o DigitalRupee Core</translation>
+        <source>Show information about Rupees Core</source>
+        <translation>Zobraz informace o Rupees Core</translation>
     </message>
     <message>
         <source>Modify configuration options for Phore</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</source>
-        <translation>Zobrazit DigitalRupee Core pomocnou zpráv pro získání seznamu možných parametrů Phore pro příkazy do příkazové řádky</translation>
+        <source>Show the Rupees Core help message to get a list with possible Phore command-line options</source>
+        <translation>Zobrazit Rupees Core pomocnou zpráv pro získání seznamu možných parametrů Phore pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>DigitalRupee Core klient</translation>
+        <source>Rupees Core client</source>
+        <translation>Rupees Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1112,12 +1112,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
-        <source>About DigitalRupee Core</source>
-        <translation>O DigitalRupee Core</translation>
+        <source>About Rupees Core</source>
+        <translation>O Rupees Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1151,16 +1151,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to DigitalRupee Core.</source>
-        <translation>Vítejte v DigitalRupee Core.</translation>
+        <source>Welcome to Rupees Core.</source>
+        <translation>Vítejte v Rupees Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude DigitalRupee Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Rupees Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>DigitalRupee Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>DigitalRupee Core stáhne a uloží kopii Phore blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Rupees Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Rupees Core stáhne a uloží kopii Phore blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1171,8 +1171,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2265,8 +2265,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     </context>
 <context>

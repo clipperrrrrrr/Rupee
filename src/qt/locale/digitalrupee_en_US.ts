@@ -602,8 +602,8 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Send coins to a Phore address</source>
@@ -622,12 +622,12 @@
         <translation>Browse masternodes</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
-        <translation>&amp;About DigitalRupee Core</translation>
+        <source>&amp;About Rupees Core</source>
+        <translation>&amp;About Rupees Core</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
-        <translation>Show information about DigitalRupee Core</translation>
+        <source>Show information about Rupees Core</source>
+        <translation>Show information about Rupees Core</translation>
     </message>
     <message>
         <source>Modify configuration options for Phore</source>
@@ -682,12 +682,12 @@
         <translation>Block explorer window</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</source>
-        <translation>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</translation>
+        <source>Show the Rupees Core help message to get a list with possible Phore command-line options</source>
+        <translation>Show the Rupees Core help message to get a list with possible Phore command-line options</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>DigitalRupee Core client</translation>
+        <source>Rupees Core client</source>
+        <translation>Rupees Core client</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Phore network</source>
@@ -1184,16 +1184,16 @@ Address: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About DigitalRupee Core</source>
-        <translation>About DigitalRupee Core</translation>
+        <source>About Rupees Core</source>
+        <translation>About Rupees Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1239,16 +1239,16 @@ Address: %4
         <translation>Welcome</translation>
     </message>
     <message>
-        <source>Welcome to DigitalRupee Core.</source>
-        <translation>Welcome to DigitalRupee Core.</translation>
+        <source>Welcome to Rupees Core.</source>
+        <translation>Welcome to Rupees Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</translation>
     </message>
     <message>
-        <source>DigitalRupee Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>DigitalRupee Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>Rupees Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Rupees Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1259,8 +1259,8 @@ Address: %4
         <translation>Use a custom data directory:</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -3126,8 +3126,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>DigitalRupee Core is shutting down...</source>
-        <translation>DigitalRupee Core is shutting down...</translation>
+        <source>Rupees Core is shutting down...</source>
+        <translation>Rupees Core is shutting down...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3276,8 +3276,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3292,8 +3292,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The DigitalRupee Core developers</source>
-        <translation>The DigitalRupee Core developers</translation>
+        <source>The Rupees Core developers</source>
+        <translation>The Rupees Core developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3910,8 +3910,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. DigitalRupee Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. DigitalRupee Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Rupees Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Rupees Core is probably already running.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4106,8 +4106,8 @@ for example: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. DigitalRupee Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. DigitalRupee Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Rupees Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Rupees Core is probably already running.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4134,8 +4134,8 @@ for example: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong DigitalRupee Core will not work properly.</source>
-        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong DigitalRupee Core will not work properly.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Rupees Core will not work properly.</source>
+        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong Rupees Core will not work properly.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4282,8 +4282,8 @@ for example: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The DigitalRupee Core Developers</source>
-        <translation>Copyright (C) 2015-%i The DigitalRupee Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Rupees Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Rupees Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4354,8 +4354,8 @@ for example: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Error loading wallet.dat: Wallet corrupted</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of DigitalRupee Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of DigitalRupee Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Rupees Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Rupees Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4466,8 +4466,8 @@ for example: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. DigitalRupee Core is shutting down.</source>
-        <translation>Initialization sanity check failed. DigitalRupee Core is shutting down.</translation>
+        <source>Initialization sanity check failed. Rupees Core is shutting down.</source>
+        <translation>Initialization sanity check failed. Rupees Core is shutting down.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5086,8 +5086,8 @@ for example: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Wallet is locked.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart DigitalRupee Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart DigitalRupee Core to complete</translation>
+        <source>Wallet needed to be rewritten: restart Rupees Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart Rupees Core to complete</translation>
     </message>
     <message>
         <source>Wallet options:</source>

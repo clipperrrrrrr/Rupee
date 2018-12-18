@@ -1,13 +1,13 @@
-DigitalRupee Core
+Rupees Core
 =====================
 
 Setup
 ---------------------
-[DigitalRupee Core](http://digitalrupee.org/wallet) is the original DigitalRupee client and it builds the backbone of the network. However, it downloads and stores the entire history of DigitalRupee transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Rupees Core](http://digitalrupee.org/wallet) is the original Rupees client and it builds the backbone of the network. However, it downloads and stores the entire history of Rupees transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run DigitalRupee on your native platform.
+The following are some helpful notes on how to run Rupees on your native platform.
 
 ### Unix
 
@@ -22,19 +22,19 @@ Unpack the files into a directory, and then run digitalrupee-qt.exe.
 
 ### OSX
 
-Drag DigitalRupee-Qt to your applications folder, and then run DigitalRupee-Qt.
+Drag Rupees-Qt to your applications folder, and then run Rupees-Qt.
 
 ### Need Help?
 
-* See the documentation at the [DigitalRupee Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [Rupees Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [DigitalRupee Forum](http://forum.digitalrupee.org/).
-* Join one of our Slack groups [DigitalRupee Slack Groups](https://digitalrupee.org/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Rupees Forum](http://forum.digitalrupee.org/).
+* Join one of our Slack groups [Rupees Slack Groups](https://digitalrupee.org/slack-logins/).
 * Join our Discord server [Discord Server](https://discord.gg/dTRhamf)
 
 Building
 ---------------------
-The following are developer notes on how to build DigitalRupee on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Rupees on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -42,7 +42,7 @@ The following are developer notes on how to build DigitalRupee on your native pl
 
 Development
 ---------------------
-The DigitalRupee repo's [root README](https://github.com/digitalrupeeproject/DigitalRupee/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Rupees repo's [root README](https://github.com/digitalrupeeproject/Rupees/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,8 +56,8 @@ The DigitalRupee repo's [root README](https://github.com/digitalrupeeproject/Dig
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [DigitalRupee](http://forum.digitalrupee.org/) forum.
-* Join the [DigitalRupee-Dev](https://digitalrupee-dev.slack.com/) Slack group ([Sign-Up](https://digitalrupee-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Rupees](http://forum.digitalrupee.org/) forum.
+* Join the [Rupees-Dev](https://digitalrupee-dev.slack.com/) Slack group ([Sign-Up](https://digitalrupee-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

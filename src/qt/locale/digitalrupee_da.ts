@@ -598,7 +598,7 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore kerne</translation>
     </message>
     <message>
@@ -618,11 +618,11 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
+        <source>&amp;About Rupees Core</source>
         <translation>&amp;Om Phore kerne</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
+        <source>Show information about Rupees Core</source>
         <translation>Vis information om Phore kerne</translation>
     </message>
     <message>
@@ -678,11 +678,11 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</source>
+        <source>Show the Rupees Core help message to get a list with possible Phore command-line options</source>
         <translation>Vis hjelpetekster fra Phore kernen for at få en liste med mulige Phore kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
+        <source>Rupees Core client</source>
         <translation>Phore kerneklient</translation>
     </message>
     <message>
@@ -1144,7 +1144,7 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore kerne</translation>
     </message>
     <message>
@@ -1152,7 +1152,7 @@ Adresse: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About DigitalRupee Core</source>
+        <source>About Rupees Core</source>
         <translation>om Phore kerne</translation>
     </message>
     <message>
@@ -1199,15 +1199,15 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to DigitalRupee Core.</source>
+        <source>Welcome to Rupees Core.</source>
         <translation>Velkommen til Phore kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</source>
         <translation>Da det er første gang programmet startes, kan De vælge hvor Phore kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>DigitalRupee Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Rupees Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Phore kernen vil nu hente og gemme en kopi af Phore blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
@@ -1219,7 +1219,7 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore kerne</translation>
     </message>
     <message>
@@ -3019,7 +3019,7 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>DigitalRupee Core is shutting down...</source>
+        <source>Rupees Core is shutting down...</source>
         <translation>Phore kernen lukker ned</translation>
     </message>
     <message>
@@ -3169,7 +3169,7 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore kerne</translation>
     </message>
     <message>
@@ -3185,7 +3185,7 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The DigitalRupee Core developers</source>
+        <source>The Rupees Core developers</source>
         <translation>Phore "core" udviklerne</translation>
     </message>
     <message>
@@ -3794,7 +3794,7 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. DigitalRupee Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Rupees Core is probably already running.</source>
         <translation>Kan ikke låse datamappen %s. Phore core kører sandsynligvis allerede.</translation>
     </message>
     <message>
@@ -3979,7 +3979,7 @@ For eksempel: alertnotify=Echo %% | mail - s "Phore ALARM!" e-mail@administrator
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. DigitalRupee Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Rupees Core is probably already running.</source>
         <translation>Det var ikke muligt at forbinde %s på denne computer. Phore kører sandsynligvis allerede.</translation>
     </message>
     <message>
@@ -4007,7 +4007,7 @@ For eksempel: alertnotify=Echo %% | mail - s "Phore ALARM!" e-mail@administrator
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong DigitalRupee Core will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Rupees Core will not work properly.</source>
         <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Phore core ikke fungere ordentligt.</translation>
     </message>
     <message>
@@ -4155,8 +4155,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Phore ALARM!" e-mail@administrator
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The DigitalRupee Core Developers</source>
-        <translation>Copyright (C) 2015-%i The DigitalRupee Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Rupees Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Rupees Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4227,7 +4227,7 @@ For eksempel: alertnotify=Echo %% | mail - s "Phore ALARM!" e-mail@administrator
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of DigitalRupee Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Rupees Core</source>
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Phore core</translation>
     </message>
     <message>
@@ -4339,7 +4339,7 @@ For eksempel: alertnotify=Echo %% | mail - s "Phore ALARM!" e-mail@administrator
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. DigitalRupee Core is shutting down.</source>
+        <source>Initialization sanity check failed. Rupees Core is shutting down.</source>
         <translation>Initiering af sanitetskontrollen fejlede. Phore core lukker ned. </translation>
     </message>
     <message>
@@ -4895,7 +4895,7 @@ For eksempel: alertnotify=Echo %% | mail - s "Phore ALARM!" e-mail@administrator
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart DigitalRupee Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Rupees Core to complete</source>
         <translation>Tegnebogen måtte genskrives. Genstart Phore core for at gøre færdig</translation>
     </message>
     <message>

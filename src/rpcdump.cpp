@@ -230,7 +230,7 @@ UniValue importaddress(const UniValue& params, bool fHelp)
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Cannot use the p2sh flag with an address - use a script instead");
         ImportAddress(DecodeDestination(params[0].get_str()), strLabel);
     } else {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address or script");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address or script");
     }
 
     if (fRescan)
@@ -414,7 +414,7 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
 
     string strAddress = params[0].get_str();
     if (!IsValidDestinationString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address");
     const CTxDestination dest = DecodeDestination(strAddress);
     auto keyid = GetKeyForDestination(*pwalletMain, dest);
     if (keyid.IsNull()) {
@@ -434,9 +434,9 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
             "dumpwallet \"filename\"\n"
             "\nThis command has been deprecated and replace with dumpallprivatekeys.\n"
             "\nSCAM WARNING: If anyone asks you to run this command and send them the file,\n"
-            "they will have FULL ACCESS to STEAL your DigitalRupee. Giving this file to someone\n"
-            "is the same thing as giving them all of the DigitalRupee in your wallet! Never send\n"
-            "this file to ANYONE that you do not trust with all of your DigitalRupee!!!\n"
+            "they will have FULL ACCESS to STEAL your Rupees. Giving this file to someone\n"
+            "is the same thing as giving them all of the Rupees in your wallet! Never send\n"
+            "this file to ANYONE that you do not trust with all of your Rupees!!!\n"
             "\nArguments:\n"
             "1. \"filename\"    (string, required) The filename\n"
             "\nExamples:\n" +
@@ -465,7 +465,7 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
     std::sort(vKeyBirth.begin(), vKeyBirth.end());
 
     // produce output
-    file << strprintf("# Wallet dump created by DigitalRupee %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
+    file << strprintf("# Wallet dump created by Rupees %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
     file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
     file << strprintf("# * Best block at time of backup was %i (%s),\n", chainActive.Height(), chainActive.Tip()->GetBlockHash().ToString());
     file << strprintf("#   mined on %s\n", EncodeDumpTime(chainActive.Tip()->GetBlockTime()));
@@ -499,9 +499,9 @@ UniValue dumpallprivatekeys(const UniValue& params, bool fHelp)
             "dumpallprivatekeys \"filename\"\n"
             "\nDumps all wallet private keys in an unencrypted, human-readable format.\n"
             "\nSCAM WARNING: If anyone asks you to run this command and send them the file,\n"
-            "they will have FULL ACCESS to STEAL your DigitalRupee. Giving this file to someone\n"
-            "is the same thing as giving them all of the DigitalRupee in your wallet! Never send\n"
-            "this file to ANYONE that you do not trust with all of your DigitalRupee!!!\n"
+            "they will have FULL ACCESS to STEAL your Rupees. Giving this file to someone\n"
+            "is the same thing as giving them all of the Rupees in your wallet! Never send\n"
+            "this file to ANYONE that you do not trust with all of your Rupees!!!\n"
            "\nArguments:\n"
             "1. \"filename\"    (string, required) The filename\n"
             "\nExamples:\n" +
@@ -530,7 +530,7 @@ UniValue dumpallprivatekeys(const UniValue& params, bool fHelp)
     std::sort(vKeyBirth.begin(), vKeyBirth.end());
 
     // produce output
-    file << strprintf("# Wallet private key dump file created by DigitalRupee %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
+    file << strprintf("# Wallet private key dump file created by Rupees %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
     file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
     file << strprintf("# * Best block at time of backup was %i (%s),\n", chainActive.Height(), chainActive.Tip()->GetBlockHash().ToString());
     file << strprintf("#   mined on %s\n", EncodeDumpTime(chainActive.Tip()->GetBlockTime()));
@@ -578,7 +578,7 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
     string strPassphrase = params[1].get_str();
 
     if (!IsValidDestinationString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address");
     CTxDestination address = DecodeDestination(strAddress);
     CKeyID *keyID = boost::get<CKeyID>(&address);
     if (!keyID)

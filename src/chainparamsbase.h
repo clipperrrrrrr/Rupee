@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between digitalrupee-cli and digitalrupeed)
- * of a given instance of the DigitalRupee system.
+ * of a given instance of the Rupees system.
  */
 class CBaseChainParams
 {

@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "DigitalRupee"
-            VALUE "FileDescription",    "digitalrupeed (OSS daemon/client for DigitalRupee)"
+            VALUE "CompanyName",        "Rupees"
+            VALUE "FileDescription",    "digitalrupeed (OSS daemon/client for Rupees)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "digitalrupeed"
             VALUE "LegalCopyright",     COPYRIGHT_STR

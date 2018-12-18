@@ -64,11 +64,11 @@
         <translation>受信用アドレス</translation>
     </message>
     <message>
-        <source>These are your DigitalRupee addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Rupees addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>これは支払い先アドレスです。送金の際には常に送金量・送金先アドレスを確認してください。</translation>
     </message>
     <message>
-        <source>These are your DigitalRupee addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Rupees addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>受け取り用アドレスです。各トランザクション/受信 につき新しいアドレスを使うことをお勧めします。</translation>
     </message>
     <message>
@@ -182,7 +182,7 @@
         <translation>ウォレットの再暗号化を行いました</translation>
     </message>
     <message>
-        <source>DigitalRupee will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
+        <source>Rupees will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
         <translation>暗号化を完了するためウォレットを閉じます。暗号化されたため、パスワードがなければ攻撃者はPHRを送金できません。</translation>
     </message>
     <message>
@@ -245,7 +245,7 @@
         <translation>&amp;BIP 38 暗号化</translation>
     </message>
     <message>
-        <source>Enter a DigitalRupee Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Rupees Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>BIP38 を用いて暗号化したDigitalRupee アドレスを入力してください。パスワードを中段の入力欄に記入し、encrypt ボタンを押して暗号化されたプライベートキーを取得しましょう。</translation>
     </message>
     <message>
@@ -253,7 +253,7 @@
         <translation>アドレス:</translation>
     </message>
     <message>
-        <source>The DigitalRupee address to sign the message with</source>
+        <source>The Rupees address to sign the message with</source>
         <translation>メッセージを署名したいDigitalRupee アドレス</translation>
     </message>
     <message>
@@ -285,8 +285,8 @@
         <translation>今表示されている署名をクリップボードへコピー</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this DigitalRupee address</source>
-        <translation>DigitalRupee アドレスの所持を証明するためにこのメッセージを署名</translation>
+        <source>Sign the message to prove you own this Rupees address</source>
+        <translation>Rupees アドレスの所持を証明するためにこのメッセージを署名</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -309,11 +309,11 @@
         <translation>BIP38 暗号化されたプライベートキーを一番上の欄に入力し、二番目の欄にパスワードを入力してください。プライベートキーを出力するため、復号化ボタンを押してください。アドレスのインポートをクリックしてウォレットに追加できます。</translation>
     </message>
     <message>
-        <source>The DigitalRupee address the message was signed with</source>
+        <source>The Rupees address the message was signed with</source>
         <translation>このDigitalRupeeアドレスのメッセージは次により署名されています</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified DigitalRupee address</source>
+        <source>Verify the message to ensure it was signed with the specified Rupees address</source>
         <translation>メッセージが特定のDigitalRupeeアドレスにより署名されていることを確認してください。</translation>
     </message>
     <message>
@@ -610,11 +610,11 @@
         <translation>ツールバー</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee コア</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees コア</translation>
     </message>
     <message>
-        <source>Send coins to a DigitalRupee address</source>
+        <source>Send coins to a Rupees address</source>
         <translation>DigitalRupeeアドレスへ送金する</translation>
     </message>
     <message>
@@ -638,23 +638,23 @@
         <translation>予算案を参照</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
-        <translation>&amp;DigitalRupee コアについて</translation>
+        <source>&amp;About Rupees Core</source>
+        <translation>&amp;Rupees コアについて</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
-        <translation>DigitalRupee コアの情報をみる</translation>
+        <source>Show information about Rupees Core</source>
+        <translation>Rupees コアの情報をみる</translation>
     </message>
     <message>
-        <source>Modify configuration options for DigitalRupee</source>
+        <source>Modify configuration options for Rupees</source>
         <translation>DigitalRupeeのオプションを編集する</translation>
     </message>
     <message>
-        <source>Sign messages with your DigitalRupee addresses to prove you own them</source>
+        <source>Sign messages with your Rupees addresses to prove you own them</source>
         <translation>あなたがそのアドレスを所有していることをメッセージの署名を用いて証明する</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified DigitalRupee addresses</source>
+        <source>Verify messages to ensure they were signed with specified Rupees addresses</source>
         <translation>メッセージが特定のDigitalRupeeアドレスにより署名されていることを確認する</translation>
     </message>
     <message>
@@ -686,8 +686,8 @@
         <translation>マスターノードの設定ファイルを開く</translation>
     </message>
     <message>
-        <source>Open a DigitalRupee: URI or payment request</source>
-        <translation>DigitalRupee: URI か支払いリクエストを開く</translation>
+        <source>Open a Rupees: URI or payment request</source>
+        <translation>Rupees: URI か支払いリクエストを開く</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -698,15 +698,15 @@
         <translation>ブロックエクスプローラ</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible DigitalRupee command-line options</source>
-        <translation>DigitalRupee コアのヘルプメッセージを表示してコマンドラインオプションを確認する</translation>
+        <source>Show the Rupees Core help message to get a list with possible Rupees command-line options</source>
+        <translation>Rupees コアのヘルプメッセージを表示してコマンドラインオプションを確認する</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>DigitalRupee コア クライアント</translation>
+        <source>Rupees Core client</source>
+        <translation>Rupees コア クライアント</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to DigitalRupee network</source>
+        <source>%n active connection(s) to Rupees network</source>
         <translation>
             <numerusform>%n 個のアクティブなノードが存在します</numerusform>
         </translation>
@@ -880,7 +880,7 @@ Address: %4
         <translation>%1 前です。ブロックをスキャン中 %2</translation>
     </message>
     <message>
-        <source>A fatal error occurred. DigitalRupee can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Rupees can no longer continue safely and will quit.</source>
         <translation>致命的なエラーが発生しました。DigitalRupeeは終了します。</translation>
     </message>
     <message>
@@ -1216,7 +1216,7 @@ Address: %4
         <translation>送金アドレスを編集</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid DigitalRupee address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Rupees address.</source>
         <translation>入力したアドレス &quot;%1&quot; は正しいDigitalRupeeアドレスではありません </translation>
     </message>
     <message>
@@ -1262,16 +1262,16 @@ Address: %4
         <translation>バージョン</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee コア</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees コア</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About DigitalRupee Core</source>
-        <translation>DigitalRupee コアについて</translation>
+        <source>About Rupees Core</source>
+        <translation>Rupees コアについて</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1317,16 +1317,16 @@ Address: %4
         <translation>ようこそ</translation>
     </message>
     <message>
-        <source>Welcome to DigitalRupee Core.</source>
-        <translation>DigitalRupee コアへようこそ</translation>
+        <source>Welcome to Rupees Core.</source>
+        <translation>Rupees コアへようこそ</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</source>
         <translation>これが初期起動の場合、データフォルダの場所を選択できます。</translation>
     </message>
     <message>
-        <source>DigitalRupee Core will download and store a copy of the DigitalRupee block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>DigitalRupee コアはDigitalRupeeのブロックチェーンデータをダウンロードします。データフォルダには少なくとも %1 GB程度の空き容量が必要です。ウォレットデータもこの場所へ保存されます。</translation>
+        <source>Rupees Core will download and store a copy of the Rupees block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Rupees コアはDigitalRupeeのブロックチェーンデータをダウンロードします。データフォルダには少なくとも %1 GB程度の空き容量が必要です。ウォレットデータもこの場所へ保存されます。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1337,8 +1337,8 @@ Address: %4
         <translation>カスタムデータフォルダを利用する:</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee コア</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees コア</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; cannot be created.</source>
@@ -1483,8 +1483,8 @@ Address: %4
         <translation>送り先のアドレスを入力</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other DigitalRupee addresses after it matures.
-To Add: enter percentage to give and DigitalRupee address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Rupees addresses after it matures.
+To Add: enter percentage to give and Rupees address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>MultiSendは最大100%までステーキング・マスターノード報酬を成熟後に他のアドレスへ自動で送金します。
@@ -1667,16 +1667,16 @@ Please check the address and try again.</source>
         <translation>Obfuscation Configuration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening DigitalRupee&apos;s configuration screen.</source>
-        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening DigitalRupee&apos;s configuration screen.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Rupees&apos;s configuration screen.</source>
+        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Rupees&apos;s configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening DigitalRupee&apos;s configuration screen.</source>
-        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening DigitalRupee&apos;s configuration screen.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Rupees&apos;s configuration screen.</source>
+        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Rupees&apos;s configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening DigitalRupee&apos;s configuration screen.</source>
-        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening DigitalRupee&apos;s configuration screen.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Rupees&apos;s configuration screen.</source>
+        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Rupees&apos;s configuration screen.</translation>
     </message>
 </context>
 <context>
@@ -1741,8 +1741,8 @@ Please check the address and try again.</source>
         <translation>未確認のお釣りの利用を無効にした場合、&lt;br/&gt;1確認されるまでお釣りを使用できません。&lt;br/&gt;</translation>
     </message>
     <message>
-        <source>Automatically open the DigitalRupee client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>DigitalRupee クライアントの利用するポートを自動で開きます。ルーターがUPnPに対応していて、有効な場合のみ動作します。</translation>
+        <source>Automatically open the Rupees client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Rupees クライアントの利用するポートを自動で開きます。ルーターがUPnPに対応していて、有効な場合のみ動作します。</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1761,11 +1761,11 @@ Please check the address and try again.</source>
         <translation>経験者向け</translation>
     </message>
     <message>
-        <source>Automatically start DigitalRupee after logging in to the system.</source>
+        <source>Automatically start Rupees after logging in to the system.</source>
         <translation>ログイン後、digitalrupee-qtが自動的に起動します。</translation>
     </message>
     <message>
-        <source>&amp;Start DigitalRupee on system login</source>
+        <source>&amp;Start Rupees on system login</source>
         <translation>&amp;ログイン時にDigitalRupee-qtを起動する</translation>
     </message>
     <message>
@@ -1781,8 +1781,8 @@ Please check the address and try again.</source>
         <translation>This amount acts as a threshold to turn off Obfuscation once it&apos;s reached.</translation>
     </message>
     <message>
-        <source>Amount of DigitalRupee to keep anonymized</source>
-        <translation>Amount of DigitalRupee to keep anonymized</translation>
+        <source>Amount of Rupees to keep anonymized</source>
+        <translation>Amount of Rupees to keep anonymized</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1809,7 +1809,7 @@ Please check the address and try again.</source>
         <translation>&amp;ネットワーク</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting DigitalRupee.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Rupees.</source>
         <translation>ユーザーインターフェースの言語設定を変更できます。変更はウォレットの次の起動から有効になります。</translation>
     </message>
     <message>
@@ -1823,7 +1823,7 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>UPnP&amp;を用いたポートマッピング</translation>
     </message>
     <message>
-        <source>Connect to the DigitalRupee network through a SOCKS5 proxy.</source>
+        <source>Connect to the Rupees network through a SOCKS5 proxy.</source>
         <translation>SOCKS5 プロキシを通してDigitalRupeeネットワークへ接続</translation>
     </message>
     <message>
@@ -1986,7 +1986,7 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>合計の残高</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DigitalRupee network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupees network after a connection is established, but this process has not completed yet.</source>
         <translation>表示されている情報は最新ではありません。ネットワークへ接続され次第ウォレットは同期されますが、まだ未完了です。</translation>
     </message>
     <message>
@@ -2070,7 +2070,7 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>watch-only アドレスの合計残高</translation>
     </message>
     <message>
-        <source>Your current DigitalRupee balance, unconfirmed and immature transactions included</source>
+        <source>Your current Rupees balance, unconfirmed and immature transactions included</source>
         <translation>未承認・未成熟の送金を含んだ現在のDigitalRupeeの残高</translation>
     </message>
     <message>
@@ -2133,7 +2133,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>digitalrupee: クリックトゥペイに失敗</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid DigitalRupee address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Rupees address or malformed URI parameters.</source>
         <translation>URIの解析に失敗しました。DigitalRupeeのアドレスが間違っているか、URIのパラメタに不備があります。</translation>
     </message>
     <message>
@@ -2230,7 +2230,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>枚数</translation>
     </message>
     <message>
-        <source>Enter a DigitalRupee address (e.g. %1)</source>
+        <source>Enter a Rupees address (e.g. %1)</source>
         <translation>DigitalRupeeアドレスを入力してください。 (例: %1)</translation>
     </message>
     <message>
@@ -2274,8 +2274,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation></translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee コア</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees コア</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -2294,8 +2294,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>マスターノード設定ファイル(masternode.conf)の読み込みでエラーが発生しました %1</translation>
     </message>
     <message>
-        <source>DigitalRupee Core didn&apos;t yet exit safely...</source>
-        <translation>DigitalRupee コアは正常に停止していません...</translation>
+        <source>Rupees Core didn&apos;t yet exit safely...</source>
+        <translation>Rupees コアは正常に停止していません...</translation>
     </message>
 </context>
 <context>
@@ -2392,7 +2392,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>ブロックチェーン</translation>
     </message>
     <message>
-        <source>Open the DigitalRupee debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Rupees debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>データフォルダからDigitalRupeeのデバッグログを開きます(時間がかかることがあります)。</translation>
     </message>
     <message>
@@ -2564,8 +2564,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the DigitalRupee RPC console.</source>
-        <translation>DigitalRupee RPC コンソールへようこそ！</translation>
+        <source>Welcome to the Rupees RPC console.</source>
+        <translation>Rupees RPC コンソールへようこそ！</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2671,11 +2671,11 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>新しい受け取りアドレスに紐づく追加のラベル</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the DigitalRupee network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Rupees network.</source>
         <translation>支払いリクエストに紐づくメッセージで、リクエストを開いた際に表示されます。 注:支払い時に表示されるメッセージではありません。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the DigitalRupee network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Rupees network.</source>
         <translation>支払いリクエストに紐づくメッセージで、リクエストを開いた際に表示されます。 &lt;br&gt;注:支払い時に表示されるメッセージではありません。</translation>
     </message>
     <message>
@@ -2972,8 +2972,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for DigitalRupee transactions than the network can process.</source>
-        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for DigitalRupee transactions than the network can process.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Rupees transactions than the network can process.</source>
+        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Rupees transactions than the network can process.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3076,7 +3076,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>匿名化資産</translation>
     </message>
     <message>
-        <source>Warning: Invalid DigitalRupee address</source>
+        <source>Warning: Invalid Rupees address</source>
         <translation>警告: DigitalRupeeアドレスが正しくありません。</translation>
     </message>
     <message>
@@ -3209,7 +3209,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>支払い先&amp;:</translation>
     </message>
     <message>
-        <source>The DigitalRupee address to send the payment to</source>
+        <source>The Rupees address to send the payment to</source>
         <translation>支払い先のDigitalRupee アドレス</translation>
     </message>
     <message>
@@ -3249,8 +3249,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>メッセージ:</translation>
     </message>
     <message>
-        <source>A message that was attached to the DigitalRupee: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DigitalRupee network.</source>
-        <translation>DigitalRupee: URI に紐づくメッセージです。 注:支払い時に表示されるメッセージではありません。</translation>
+        <source>A message that was attached to the Rupees: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Rupees network.</source>
+        <translation>Rupees: URI に紐づくメッセージです。 注:支払い時に表示されるメッセージではありません。</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3276,8 +3276,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>DigitalRupee Core is shutting down...</source>
-        <translation>DigitalRupee コアは停止中です...</translation>
+        <source>Rupees Core is shutting down...</source>
+        <translation>Rupees コアは停止中です...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3299,7 +3299,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>アドレスの所有を証明するためにメッセージを署名できます。フィッシング攻撃などを避けるために、よくわからないものには署名せず、完全に同意したものにのみ署名してください。</translation>
     </message>
     <message>
-        <source>The DigitalRupee address to sign the message with</source>
+        <source>The Rupees address to sign the message with</source>
         <translation>メッセージを署名するDigitalRupeeアドレス</translation>
     </message>
     <message>
@@ -3331,15 +3331,15 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>現在のシグネチャをクリップボードへコピー</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this DigitalRupee address</source>
+        <source>Sign the message to prove you own this Rupees address</source>
         <translation>このDigitalRupeeアドレスの所有の証明のためメッセージを署名する</translation>
     </message>
     <message>
-        <source>The DigitalRupee address the message was signed with</source>
+        <source>The Rupees address the message was signed with</source>
         <translation>メッセージの署名に使われたDigitalRupee アドレス</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified DigitalRupee address</source>
+        <source>Verify the message to ensure it was signed with the specified Rupees address</source>
         <translation>特定のDigitalRupeeアドレスにより署名されたメッセージを確認する</translation>
     </message>
     <message>
@@ -3426,8 +3426,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee コア</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees コア</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3442,8 +3442,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>Dash コア開発者チーム</translation>
     </message>
     <message>
-        <source>The DigitalRupee Core developers</source>
-        <translation>DigitalRupee コア開発者チーム</translation>
+        <source>The Rupees Core developers</source>
+        <translation>Rupees コア開発者チーム</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4162,8 +4162,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>JSON-RPC 接続のために与えられたアドレスでバインドし常にlistenします。IPv6では [ホスト]:ポート が記法です。このオプションは複数回設定できます (デフォルト: 全インターフェースに対しバインド)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. DigitalRupee Core is probably already running.</source>
-        <translation>%s のデータフォルダをロックできません。 DigitalRupee コアは既に実行されています。</translation>
+        <source>Cannot obtain a lock on data directory %s. Rupees Core is probably already running.</source>
+        <translation>%s のデータフォルダをロックできません。 Rupees コアは既に実行されています。</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4182,7 +4182,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>−rescanを起動時に使用し全てのトランザクションを削除してブロックチェーンからデータを再取得</translation>
     </message>
     <message>
-        <source>Disable all DigitalRupee specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Rupees specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
         <translation>DigitalRupeeの全機能を無効化 (マスターノード, 匿名化, SwiftTX, 予算案) (0-1, デフォルト: %u)</translation>
     </message>
     <message>
@@ -4344,7 +4344,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Rupees Alert&quot; admin@foo.com
 </source>
         <translation>
         digitalrupeed, digitalrupee-qt にserverオプションを付ける場合、以下の設定が必要になります。:
@@ -4356,11 +4356,11 @@ for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin
         ユーザーネームとパスワードは同じにしてはいけません。
         digitalrupee.confが存在しなければ作成します。
         It is also recommended to set alertnotify so you are notified of problems;
-        for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin@foo.com
+        for example: alertnotify=echo %%s | mail -s &quot;Rupees Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. DigitalRupee Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Rupees Core is probably already running.</source>
         <translation>%s をbind出来ませんでした。DigitalRupeeコアは既に動作しているようです。</translation>
     </message>
     <message>
@@ -4388,7 +4388,7 @@ for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin
         <translation>警告: -paytxfee のオプションが非常に高額に設定されています!これはトランザクションの送信時に支払うことになる手数料です。</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong DigitalRupee Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Rupees Core will not work properly.</source>
         <translation>警告: あなたのコンピュータの日付と時刻が正しいか確認して下さい!もし時刻が異なる場合、正常にDigitalRupee Coreが動作しません。</translation>
     </message>
     <message>
@@ -4536,8 +4536,8 @@ for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin
         <translation>Copyright (C) 2014-%i Dash コア開発者チーム</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The DigitalRupee Core Developers</source>
-        <translation>Copyright (C) 2015-%i DigitalRupee コア開発者チーム</translation>
+        <source>Copyright (C) 2015-%i The Rupees Core Developers</source>
+        <translation>Copyright (C) 2015-%i Rupees コア開発者チーム</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4608,7 +4608,7 @@ for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin
         <translation>wallet.datの読み込みにエラー発生: ウォレットが破損しています</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of DigitalRupee Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Rupees Core</source>
         <translation>Ewallet.datの読み込みにエラー発生: ウォレットデータの読み込みに新しいバージョンのDigitalRupee コアが必要です</translation>
     </message>
     <message>
@@ -4720,7 +4720,7 @@ for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin
         <translation>情報</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. DigitalRupee Core is shutting down.</source>
+        <source>Initialization sanity check failed. Rupees Core is shutting down.</source>
         <translation>初期サニティチェックが失敗しました。DigitalRupeeコアは終了します。</translation>
     </message>
     <message>
@@ -5336,8 +5336,8 @@ for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin
         <translation>ウォレットはロックされています。</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart DigitalRupee Core to complete</source>
-        <translation>ウォレットは再書き込みが必要です。DigitalRupee コアを再起動してください。</translation>
+        <source>Wallet needed to be rewritten: restart Rupees Core to complete</source>
+        <translation>ウォレットは再書き込みが必要です。Rupees コアを再起動してください。</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5414,7 +5414,7 @@ for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin
         <translation>計算されたアキュムレーターチェックポイントはブロックインデックスで記録されたものではありません</translation>
     </message>
     <message>
-        <source>Disable all DigitalRupee specific functionality (Masternodes, Obfuscation, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Rupees specific functionality (Masternodes, Obfuscation, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation>DigitalRupeeの全特徴を無効化する(マスターノード/匿名化/SwiftX/予算案) (0-1, デフォルト: %u)</translation>
     </message>
     <message>
@@ -5463,7 +5463,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Rupees Alert&quot; admin@foo.com
 </source>
         <translation>digitalrupeed, digitalrupee-qt -server を利用する場合rpcの設定が必要です。:
 %s
@@ -5474,7 +5474,7 @@ rpcpassword=%s
 ユーザー名と同じパスワードは禁止されます。
 もしファイルが存在しない場合、自動的に生成されます。
 以下を追加することで、問題が発生したときにメールでアラートを出すこともできます。
-for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Rupees Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -5490,8 +5490,8 @@ for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin
         <translation>Copyright (C) 2015-%i PIVX コア開発者チーム</translation>
     </message>
     <message>
-        <source>Copyright (C) 2017-%i The DigitalRupee Core Developers</source>
-        <translation>Copyright (C) 2015-%i DigitalRupee コア開発者チーム {2017-?}</translation>
+        <source>Copyright (C) 2017-%i The Rupees Core Developers</source>
+        <translation>Copyright (C) 2015-%i Rupees コア開発者チーム {2017-?}</translation>
     </message>
     <message>
         <source>Delete blockchain folders and resync from scratch</source>
@@ -5644,7 +5644,7 @@ for example: alertnotify=echo %%s | mail -s &quot;DigitalRupee Alert&quot; admin
         <translation>ゼロコインの操作:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DigitalRupee network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupees network after a connection is established, but this process has not completed yet.</source>
         <translation>表示されている情報は古いものかもしれません。DigitalRupeeネットワークに接続後自動的に同期が行われますが、まだ同期は完了していません。</translation>
     </message>
     <message>
@@ -5742,7 +5742,7 @@ zDRS are mature when they have more than 20 confirmations AND more than 1 mint o
         <translation>支払い先:</translation>
     </message>
     <message>
-        <source>The DigitalRupee address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The Rupees address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>支払い先DigitalRupeeアドレスです。空欄の際は自身への送金になります。</translation>
     </message>
     <message>
@@ -5750,7 +5750,7 @@ zDRS are mature when they have more than 20 confirmations AND more than 1 mint o
         <translation>以前利用したアドレスを選択</translation>
     </message>
     <message>
-        <source>Enter a DigitalRupee address (e.g. PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp)</source>
+        <source>Enter a Rupees address (e.g. PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp)</source>
         <translation>DigitalRupeeアドレスを入力(例: PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp)</translation>
     </message>
     <message>
@@ -6014,7 +6014,7 @@ To change the percentage (no restart required):
         <translation>支払い先に何も入力されない場合、自身への支払いを実行します</translation>
     </message>
     <message>
-        <source>Invalid DigitalRupee Address</source>
+        <source>Invalid Rupees Address</source>
         <translation>DigitalRupeeアドレスが間違っています</translation>
     </message>
     <message>

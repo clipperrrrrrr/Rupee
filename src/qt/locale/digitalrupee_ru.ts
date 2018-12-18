@@ -62,12 +62,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your DigitalRupee addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши DigitalRupee-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your Rupees addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши Rupees-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your DigitalRupee addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши DigitalRupee-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your Rupees addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши Rupees-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>DigitalRupee will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
-        <translation>DigitalRupee сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши DigitalRupee от кражи с использованием вредоносного ПО.</translation>
+        <source>Rupees will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
+        <translation>Rupees сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши Rupees от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 Шифрование</translation>
     </message>
     <message>
-        <source>Enter a DigitalRupee Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите DigitalRupee адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
+        <source>Enter a Rupees Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Введите Rupees адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The DigitalRupee address to sign the message with</source>
-        <translation>Адрес DigitalRupee для подписи сообщения с помощью</translation>
+        <source>The Rupees address to sign the message with</source>
+        <translation>Адрес Rupees для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this DigitalRupee address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес DigitalRupee</translation>
+        <source>Sign the message to prove you own this Rupees address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес Rupees</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Введите зашифрованный с помощью BIP 38 секретный ключ. Введите секретную фразу в среднем окне. Нажмите Дешифровать Ключ чтобы создать секретный ключ. Нажав на Импортировать Адрес после дешифровки, вы добавите секретный ключ к кошельку.</translation>
     </message>
     <message>
-        <source>The DigitalRupee address the message was signed with</source>
-        <translation>Адрес DigitalRupee, которым подписано сообщение</translation>
+        <source>The Rupees address the message was signed with</source>
+        <translation>Адрес Rupees, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified DigitalRupee address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным DigitalRupee адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified Rupees address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным Rupees адресом </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,16 +594,16 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
-        <source>Send coins to a DigitalRupee address</source>
-        <translation>Отправить монеты на DigitalRupee адрес</translation>
+        <source>Send coins to a Rupees address</source>
+        <translation>Отправить монеты на Rupees адрес</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and digitalrupee: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и DigitalRupee: URI)</translation>
+        <translation>Запросить платежи (генерирует QR-код и Rupees: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -622,24 +622,24 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
-        <translation>&amp;О DigitalRupee Core</translation>
+        <source>&amp;About Rupees Core</source>
+        <translation>&amp;О Rupees Core</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
-        <translation>Показать информацию о DigitalRupee Core</translation>
+        <source>Show information about Rupees Core</source>
+        <translation>Показать информацию о Rupees Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for DigitalRupee</source>
-        <translation>Изменение параметров конфигурации DigitalRupee</translation>
+        <source>Modify configuration options for Rupees</source>
+        <translation>Изменение параметров конфигурации Rupees</translation>
     </message>
     <message>
-        <source>Sign messages with your DigitalRupee addresses to prove you own them</source>
-        <translation>Подписывайте сообщения вашими DigitalRupee адресами, чтобы доказать, что вы их владелец</translation>
+        <source>Sign messages with your Rupees addresses to prove you own them</source>
+        <translation>Подписывайте сообщения вашими Rupees адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified DigitalRupee addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным DigitalRupee адресом </translation>
+        <source>Verify messages to ensure they were signed with specified Rupees addresses</source>
+        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным Rupees адресом </translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -670,8 +670,8 @@
         <translation>Открыть файл настроек мастернод</translation>
     </message>
     <message>
-        <source>Open a DigitalRupee: URI or payment request</source>
-        <translation>Открыть DigitalRupee: URI или запрос платежа</translation>
+        <source>Open a Rupees: URI or payment request</source>
+        <translation>Открыть Rupees: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -682,12 +682,12 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible DigitalRupee command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды DigitalRupee</translation>
+        <source>Show the Rupees Core help message to get a list with possible Rupees command-line options</source>
+        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды Rupees</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>Клиент DigitalRupee Core</translation>
+        <source>Rupees Core client</source>
+        <translation>Клиент Rupees Core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1110,8 +1110,8 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid DigitalRupee address.</source>
-        <translation>Введенный адрес "%1" не является DigitalRupee адресом.</translation>
+        <source>The entered address "%1" is not a valid Rupees address.</source>
+        <translation>Введенный адрес "%1" не является Rupees адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1156,16 +1156,16 @@ MultiSend: %1</translation>
         <translation>версия</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About DigitalRupee Core</source>
-        <translation>О DigitalRupee Core</translation>
+        <source>About Rupees Core</source>
+        <translation>О Rupees Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1211,16 +1211,16 @@ MultiSend: %1</translation>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to DigitalRupee Core.</source>
-        <translation>Добро пожаловать в DigitalRupee Core.</translation>
+        <source>Welcome to Rupees Core.</source>
+        <translation>Добро пожаловать в Rupees Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные DigitalRupee Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Rupees Core.</translation>
     </message>
     <message>
-        <source>DigitalRupee Core will download and store a copy of the DigitalRupee block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>DigitalRupee Core загрузит и сохранит копию цепочки блоков DigitalRupee. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>Rupees Core will download and store a copy of the Rupees block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Rupees Core загрузит и сохранит копию цепочки блоков Rupees. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1231,8 +1231,8 @@ MultiSend: %1</translation>
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1373,12 +1373,12 @@ MultiSend: %1</translation>
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other DigitalRupee addresses after it matures.
-To Add: enter percentage to give and DigitalRupee address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Rupees addresses after it matures.
+To Add: enter percentage to give and Rupees address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие DigitalRupee адреса.
-Для добавления: введите передаваемый процент и DigitalRupee адрес для добавления к вектору MultiSend.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие Rupees адреса.
+Для добавления: введите передаваемый процент и Rupees адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
     </message>
@@ -1548,16 +1548,16 @@ Please check the address and try again.</source>
         <translation>Настройка Перемешивания</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening DigitalRupee's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки DigitalRupee.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Rupees's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки Rupees.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening DigitalRupee's configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки DigitalRupee.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Rupees's configuration screen.</source>
+        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки Rupees.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening DigitalRupee's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки DigitalRupee.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Rupees's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки Rupees.</translation>
     </message>
 </context>
 <context>
@@ -1618,8 +1618,8 @@ Please check the address and try again.</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the DigitalRupee client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт DigitalRupee через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the Rupees client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт Rupees через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1638,12 +1638,12 @@ Please check the address and try again.</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start DigitalRupee after logging in to the system.</source>
-        <translation>Автоматически запускать DigitalRupee после входа в систему.</translation>
+        <source>Automatically start Rupees after logging in to the system.</source>
+        <translation>Автоматически запускать Rupees после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start DigitalRupee on system login</source>
-        <translation>&amp;Запускать DigitalRupee при входе в систему</translation>
+        <source>&amp;Start Rupees on system login</source>
+        <translation>&amp;Запускать Rupees при входе в систему</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1670,8 +1670,8 @@ Please check the address and try again.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting DigitalRupee.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска DigitalRupee.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Rupees.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска Rupees.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1696,8 +1696,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Предпочитаемый номинал авточеканной  монеты  zDRS</translation>
     </message>
     <message>
-        <source>Connect to the DigitalRupee network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети DigitalRupee через SOCKS5 прокси.</translation>
+        <source>Connect to the Rupees network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети Rupees через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1855,8 +1855,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Награды за хранение и мастерноды, которые еще не *созрели*</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DigitalRupee network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью DigitalRupee после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupees network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Rupees после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1938,8 +1938,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Не удалось запустить digitalrupee: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid DigitalRupee address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный DigitalRupee адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Rupees address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный Rupees адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2028,8 +2028,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Действия Zerocoin </translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DigitalRupee network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью DigitalRupee после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupees network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Rupees после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zDrs</source>
@@ -2191,8 +2191,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a DigitalRupee address (e.g. %1)</source>
-        <translation>Введите адрес DigitalRupee (например %1)</translation>
+        <source>Enter a Rupees address (e.g. %1)</source>
+        <translation>Введите адрес Rupees (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2325,8 +2325,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the DigitalRupee debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки DigitalRupee. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the Rupees debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки Rupees. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2486,8 +2486,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the DigitalRupee RPC console.</source>
-        <translation>Добро пожаловать в окружение DigitalRupee RPC.</translation>
+        <source>Welcome to the Rupees RPC console.</source>
+        <translation>Добро пожаловать в окружение Rupees RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2786,8 +2786,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Копировать изменение</translation>
     </message>
     <message>
-        <source>Warning: Invalid DigitalRupee address</source>
-        <translation>Предупреждение: неправильный DigitalRupee адрес</translation>
+        <source>Warning: Invalid Rupees address</source>
+        <translation>Предупреждение: неправильный Rupees адрес</translation>
     </message>
     <message>
         <source>and SwiftTX</source>
@@ -2840,8 +2840,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>DigitalRupee Core is shutting down...</source>
-        <translation>DigitalRupee Core выключается...</translation>
+        <source>Rupees Core is shutting down...</source>
+        <translation>Rupees Core выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2851,8 +2851,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The DigitalRupee address to sign the message with</source>
-        <translation>Адрес DigitalRupee для подписи сообщения с помощью</translation>
+        <source>The Rupees address to sign the message with</source>
+        <translation>Адрес Rupees для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2875,16 +2875,16 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this DigitalRupee address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес DigitalRupee</translation>
+        <source>Sign the message to prove you own this Rupees address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес Rupees</translation>
     </message>
     <message>
-        <source>The DigitalRupee address the message was signed with</source>
-        <translation>Адрес DigitalRupee, которым подписано сообщение</translation>
+        <source>The Rupees address the message was signed with</source>
+        <translation>Адрес Rupees, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified DigitalRupee address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным DigitalRupee адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified Rupees address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным Rupees адресом </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2930,8 +2930,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2946,8 +2946,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>The DigitalRupee Core developers</source>
-        <translation>Разработчики DigitalRupee Core</translation>
+        <source>The Rupees Core developers</source>
+        <translation>Разработчики Rupees Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3239,8 +3239,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The DigitalRupee Core Developers</source>
-        <translation>Copyright (C) 2015-%i Разработчики DigitalRupee Core</translation>
+        <source>Copyright (C) 2015-%i The Rupees Core Developers</source>
+        <translation>Copyright (C) 2015-%i Разработчики Rupees Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

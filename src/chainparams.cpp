@@ -127,14 +127,14 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // DigitalRupee: 1 day
-        nTargetSpacing = 1 * 60;  // DigitalRupee: 1 minute
+        nTargetTimespan = 1 * 60; // Rupees: 1 day
+        nTargetSpacing = 1 * 10;  // Rupees: 1 minute
         nMaturity = 100;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 8200000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 1000;
 
         nModifierUpdateBlock = 468744;
 
@@ -209,11 +209,11 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = false;
+        fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fMineBlocksOnDemand = true;
+        fMineBlocksOnDemand = false;
         fSkipProofOfWorkCheck = false;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
@@ -269,8 +269,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // DigitalRupee: 1 day
-        nTargetSpacing = 1 * 15;  // DigitalRupee: 1 minute
+        nTargetTimespan = 1 * 60; // Rupees: 1 day
+        nTargetSpacing = 1 * 15;  // Rupees: 1 minute
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 1; //approx Mon, 17 Apr 2017 04:00:00 GMT
@@ -371,8 +371,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // DigitalRupee: 1 day
-        nTargetSpacing = 1 * 60;        // DigitalRupee: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Rupees: 1 day
+        nTargetSpacing = 1 * 60;        // Rupees: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1505224800;
         genesis.nBits = 0x207fffff;

@@ -110,7 +110,7 @@ void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a DigitalRupee address (e.g. %1)").arg("PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp"));
+    widget->setPlaceholderText(QObject::tr("Enter a Rupees address (e.g. %1)").arg("PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -187,7 +187,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent)
 
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 {
-    // return if URI is not valid or is no DigitalRupee: URI
+    // return if URI is not valid or is no Rupees: URI
     if (!uri.isValid() || uri.scheme() != QString(URI_SCHEME))
         return false;
 
@@ -654,12 +654,12 @@ bool DHMSTableWidgetItem::operator<(QTableWidgetItem const& item) const
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "DigitalRupee.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Rupees.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for DigitalRupee.lnk
+    // check for Rupees.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -772,7 +772,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a digitalrupee.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=DigitalRupee\n";
+        optionFile << "Name=Rupees\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

@@ -602,7 +602,7 @@
         <translation>Herramienta de pestañas</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Núcleo Phore</translation>
     </message>
     <message>
@@ -630,11 +630,11 @@
         <translation>Explorar nodos maestros</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
+        <source>&amp;About Rupees Core</source>
         <translation>&amp;Sobre el núcleo de Phore</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
+        <source>Show information about Rupees Core</source>
         <translation>Mostrar información sobre el núcleo de Phore</translation>
     </message>
     <message>
@@ -690,12 +690,12 @@
         <translation>Ventana del explorador de bloques</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</source>
-        <translation>Mostrar la ayuda de DigitalRupee Core para obtener una lista de posibles opciones en línea de comandos</translation>
+        <source>Show the Rupees Core help message to get a list with possible Phore command-line options</source>
+        <translation>Mostrar la ayuda de Rupees Core para obtener una lista de posibles opciones en línea de comandos</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>Cliente DigitalRupee Core</translation>
+        <source>Rupees Core client</source>
+        <translation>Cliente Rupees Core</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Phore network</source>
@@ -1188,7 +1188,7 @@ MultiEnvío: %1</translation>
         <translation>versión</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Núcleo Phore</translation>
     </message>
     <message>
@@ -1196,8 +1196,8 @@ MultiEnvío: %1</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About DigitalRupee Core</source>
-        <translation>Acerca de DigitalRupee Core</translation>
+        <source>About Rupees Core</source>
+        <translation>Acerca de Rupees Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ MultiEnvío: %1</translation>
         <translation>Bienvenido/a</translation>
     </message>
     <message>
-        <source>Welcome to DigitalRupee Core.</source>
-        <translation>Bienvenido/a a DigitalRupee Core.</translation>
+        <source>Welcome to Rupees Core.</source>
+        <translation>Bienvenido/a a Rupees Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</source>
-        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará DigitalRupee Core sus datos.</translation>
+        <source>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</source>
+        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará Rupees Core sus datos.</translation>
     </message>
     <message>
-        <source>DigitalRupee Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>DigitalRupee Core descargará y guardará una copia de la cadena de bloques Phore. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
+        <source>Rupees Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Rupees Core descargará y guardará una copia de la cadena de bloques Phore. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,7 +1263,7 @@ MultiEnvío: %1</translation>
         <translation>Usar una carpeta de datos personalizada:</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Núcleo Phore</translation>
     </message>
     <message>
@@ -3473,7 +3473,7 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>DigitalRupee Core is shutting down...</source>
+        <source>Rupees Core is shutting down...</source>
         <translation>El programa Phore se está cerrando...</translation>
     </message>
     <message>
@@ -3623,7 +3623,7 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Núcleo Phore</translation>
     </message>
     <message>
@@ -3639,8 +3639,8 @@ Por favor tenga paciencia...</translation>
         <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
-        <source>The DigitalRupee Core developers</source>
-        <translation>Los desarrolladores de DigitalRupee Core</translation>
+        <source>The Rupees Core developers</source>
+        <translation>Los desarrolladores de Rupees Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4332,8 +4332,8 @@ Por favor tenga paciencia...</translation>
         <translation>El punto de chequeo del acumulador que hemos calculado no coincide con lo guardado en el índice de bloques</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. DigitalRupee Core is probably already running.</source>
-        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. DigitalRupee Core esta probablemente en ejecución.</translation>
+        <source>Cannot obtain a lock on data directory %s. Rupees Core is probably already running.</source>
+        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Rupees Core esta probablemente en ejecución.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4520,8 +4520,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. DigitalRupee Core is probably already running.</source>
-        <translation>Imposible conectar a %s en esta computadora. Es probable que DigitalRupee Core ya este corriendo.</translation>
+        <source>Unable to bind to %s on this computer. Rupees Core is probably already running.</source>
+        <translation>Imposible conectar a %s en esta computadora. Es probable que Rupees Core ya este corriendo.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4548,8 +4548,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Advertencia: -paytxfee esta muy alta! Esta es la comisión de transacción que pagarás si envías una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong DigitalRupee Core will not work properly.</source>
-        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora DigitalRupee Core no funcionará adecuadamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Rupees Core will not work properly.</source>
+        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora Rupees Core no funcionará adecuadamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4704,8 +4704,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The DigitalRupee Core Developers</source>
-        <translation>Copyright (C) 2015-%i The DigitalRupee Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Rupees Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Rupees Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4784,7 +4784,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Error al cargar wallet.dat: Billetera dañada</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of DigitalRupee Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Rupees Core</source>
         <translation>Error al cargar wallet.dat: La Billetera requiere una nueva versión del Núcleo Phore</translation>
     </message>
     <message>
@@ -4896,8 +4896,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Información</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. DigitalRupee Core is shutting down.</source>
-        <translation>La prueba de salud de inicialización ha fallado. DigitalRupee Core se cerrará.</translation>
+        <source>Initialization sanity check failed. Rupees Core is shutting down.</source>
+        <translation>La prueba de salud de inicialización ha fallado. Rupees Core se cerrará.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5572,8 +5572,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Monedero bloqueado.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart DigitalRupee Core to complete</source>
-        <translation>Monedero necesita ser reescrito: reinicie DigitalRupee Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart Rupees Core to complete</source>
+        <translation>Monedero necesita ser reescrito: reinicie Rupees Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

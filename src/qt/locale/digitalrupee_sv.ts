@@ -583,7 +583,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore Kärna</translation>
     </message>
     <message>
@@ -603,11 +603,11 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
+        <source>&amp;About Rupees Core</source>
         <translation>Om Phore Kärnan</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
+        <source>Show information about Rupees Core</source>
         <translation>Visa information om Phore Kärnan</translation>
     </message>
     <message>
@@ -631,7 +631,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
+        <source>Rupees Core client</source>
         <translation>Phore kärn klient</translation>
     </message>
     <message>
@@ -837,14 +837,14 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore Kärna</translation>
     </message>
     <message>
@@ -1232,7 +1232,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore Kärna</translation>
     </message>
     </context>

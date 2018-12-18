@@ -598,8 +598,8 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Send coins to a Phore address</source>
@@ -618,12 +618,12 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
-        <translation>O DigitalRupee Core</translation>
+        <source>&amp;About Rupees Core</source>
+        <translation>O Rupees Core</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
-        <translation>Zobraziť informácie o DigitalRupee Core</translation>
+        <source>Show information about Rupees Core</source>
+        <translation>Zobraziť informácie o Rupees Core</translation>
     </message>
     <message>
         <source>Modify configuration options for Phore</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</source>
-        <translation>Zobraziť pomocnú správu programu DigitalRupee Core a získajte zoznam možností príkazového riadka Phore</translation>
+        <source>Show the Rupees Core help message to get a list with possible Phore command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Rupees Core a získajte zoznam možností príkazového riadka Phore</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>DigitalRupee Core klient</translation>
+        <source>Rupees Core client</source>
+        <translation>Rupees Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -904,15 +904,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1207,8 +1207,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     </context>
 <context>

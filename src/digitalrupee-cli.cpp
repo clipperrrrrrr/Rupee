@@ -73,10 +73,10 @@ static bool AppInitRPC(int argc, char* argv[])
     //
     ParseParameters(argc, argv);
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("DigitalRupee Core RPC client version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("Rupees Core RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  digitalrupee-cli [options] <command> [params]  " + _("Send command to DigitalRupee Core") + "\n" +
+                        "  digitalrupee-cli [options] <command> [params]  " + _("Send command to Rupees Core") + "\n" +
                         "  digitalrupee-cli [options] help                " + _("List commands") + "\n" +
                         "  digitalrupee-cli [options] help <command>      " + _("Get help for a command") + "\n";
 

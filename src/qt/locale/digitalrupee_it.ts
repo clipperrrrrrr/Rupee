@@ -590,8 +590,8 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Send coins to a Phore address</source>
@@ -610,12 +610,12 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
-        <translation>&amp;Informazioni DigitalRupee Core</translation>
+        <source>&amp;About Rupees Core</source>
+        <translation>&amp;Informazioni Rupees Core</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
-        <translation>Visualizza informazioni su DigitalRupee Core</translation>
+        <source>Show information about Rupees Core</source>
+        <translation>Visualizza informazioni su Rupees Core</translation>
     </message>
     <message>
         <source>Modify configuration options for Phore</source>
@@ -646,8 +646,8 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</source>
-        <translation>Mostra il messaggio di aiuto DigitalRupee Core per ottenere un elenco con le possibili opzioni di riga di comando Phore</translation>
+        <source>Show the Rupees Core help message to get a list with possible Phore command-line options</source>
+        <translation>Mostra il messaggio di aiuto Rupees Core per ottenere un elenco con le possibili opzioni di riga di comando Phore</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -888,8 +888,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -915,8 +915,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1215,8 +1215,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     </context>
 <context>

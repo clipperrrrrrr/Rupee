@@ -29,7 +29,7 @@
 #include <boost/filesystem/path.hpp>
 #include <boost/thread/exceptions.hpp>
 
-//DigitalRupee only features
+//Rupees only features
 
 extern bool fMasterNode;
 extern bool fLiteMode;

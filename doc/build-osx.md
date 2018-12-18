@@ -46,8 +46,8 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/digitalrupeeproject/DigitalRupee.git
-        cd DigitalRupee
+        git clone https://github.com/digitalrupeeproject/Rupees.git
+        cd Rupees
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
          export LDFLAGS+=-L/usr/local/opt/openssl/lib
@@ -101,7 +101,7 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the DigitalRupee-Qt.app
+Once dependencies are compiled, see release-process.md for how the Rupees-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
@@ -113,14 +113,14 @@ directory. We have to first create the RPC configuration file, though.
 Run `./digitalrupeed` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=digitalrupeerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/DigitalRupee/digitalrupee.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/DigitalRupee/digitalrupee.conf"
+    echo -e "rpcuser=digitalrupeerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Rupees/digitalrupee.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Rupees/digitalrupee.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/DigitalRupee/debug.log
+    tail -f $HOME/Library/Application\ Support/Rupees/debug.log
 
 Other commands:
 -------
@@ -145,7 +145,7 @@ Troubleshooting:<a name="trouble"></a>
         make
         sudo make install
 
-        Then configure DigitalRupee with this build of BerkeleyDB,
+        Then configure Rupees with this build of BerkeleyDB,
         ./configure --with-gui=qt5  LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib/" CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include/"
                 
         
@@ -166,7 +166,7 @@ Otherwise, open Terminal and type in the command to install homebrew:
 
 ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 
-The use homebrew to install a number of unix programs and libraries needed to build the DigitalRupee wallet:
+The use homebrew to install a number of unix programs and libraries needed to build the Rupees wallet:
 
 ```brew install autoconf automake berkeley-db@4 boost@1.57 git libevent libtool miniupnpc openssl pkg-config protobuf qt zeromq```
 
@@ -181,7 +181,7 @@ Next, switch into your Downloads folder:
 The next step is to download the current version of the wallet from Github and go into that directory:
 
 ```git clone https://github.com/digitalrupeeproject/digitalrupee.git```
-```cd DigitalRupee```
+```cd Rupees```
 
 Now set some configuration flags:
 
@@ -193,15 +193,15 @@ Then we begin the build process:
 ```./configure```
 ```make```
 
-You have the choice to build the GUI DigitalRupee wallet as a Mac OSX app, described in “How to build the DigitalRupee-Qt App”. If, for whatever reason, you prefer to use the command line tools, continue with “Command line tools”.
+You have the choice to build the GUI Rupees wallet as a Mac OSX app, described in “How to build the Rupees-Qt App”. If, for whatever reason, you prefer to use the command line tools, continue with “Command line tools”.
 
-### How to build the DigitalRupee-Qt App:
+### How to build the Rupees-Qt App:
 
 After make is finished, you can create an App bundle inside a disk image with:
 
 ```make deploy```
 
-Once this is done, you’ll find DigitalRupee-Qt.dmg inside your DigitalRupee folder. Open and install the wallet like any typical Mac app.
+Once this is done, you’ll find Rupees-Qt.dmg inside your Rupees folder. Open and install the wallet like any typical Mac app.
 
 ### Command line tools
 
@@ -215,4 +215,4 @@ And there you have your wallet – you can start it by running:
 
 You can move the wallet app to another more permanent location. If you have not moved it and want to start your wallet in the future, open Terminal and run this command:
 
-~/Downloads/DigitalRupee/src/qt/digitalrupee-qt
+~/Downloads/Rupees/src/qt/digitalrupee-qt

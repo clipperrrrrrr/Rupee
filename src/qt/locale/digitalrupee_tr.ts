@@ -613,7 +613,7 @@
         <translation>Sekme tablosu</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore CORE</translation>
     </message>
     <message>
@@ -637,11 +637,11 @@
         <translation>Masternodları ara</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
+        <source>&amp;About Rupees Core</source>
         <translation>Pıvx core Hakkında</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
+        <source>Show information about Rupees Core</source>
         <translation>Pıvx Core hakkında bilgi göster</translation>
     </message>
     <message>
@@ -698,12 +698,12 @@
         <translation>Kaşif penceresini engelle</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</source>
-        <translation>Olası Phore komut satırı seçeneklerine sahip bir liste almak için DigitalRupee Core yardım mesajını gösterin</translation>
+        <source>Show the Rupees Core help message to get a list with possible Phore command-line options</source>
+        <translation>Olası Phore komut satırı seçeneklerine sahip bir liste almak için Rupees Core yardım mesajını gösterin</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>DigitalRupee Core istemci</translation>
+        <source>Rupees Core client</source>
+        <translation>Rupees Core istemci</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1121,7 +1121,7 @@ Adres: %4</translation>
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore CORE</translation>
     </message>
     <message>
@@ -1144,15 +1144,15 @@ Adres: %4</translation>
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to DigitalRupee Core.</source>
-        <translation>DigitalRupee Core'a hoşgeldiniz.</translation>
+        <source>Welcome to Rupees Core.</source>
+        <translation>Rupees Core'a hoşgeldiniz.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Varsayılan veri dosyasını kullanınız</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore CORE</translation>
     </message>
     <message>
@@ -1587,7 +1587,7 @@ Adres: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation>Phore CORE</translation>
     </message>
     </context>

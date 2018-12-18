@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.digitalrupee.DigitalRupee-Qt";
+        return @"io.digitalrupee.Rupees-Qt";
     } else {
         return [self __bundleIdentifier];
     }

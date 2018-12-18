@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=DigitalRupee
-Comment=DigitalRupee P2P Cryptocurrency
-Comment[fr]=DigitalRupee, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=DigitalRupee, eşten eşe kriptografik sanal para birimi
+Name=Rupees
+Comment=Rupees P2P Cryptocurrency
+Comment[fr]=Rupees, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Rupees, eşten eşe kriptografik sanal para birimi
 Exec=digitalrupee-qt %u
 Terminal=false
 Type=Application

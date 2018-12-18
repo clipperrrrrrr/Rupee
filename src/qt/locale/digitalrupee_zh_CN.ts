@@ -62,11 +62,11 @@
         <translation>接收地址</translation>
     </message>
     <message>
-        <source>These are your DigitalRupee addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Rupees addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>这是用于发送DigitalRupee的地址。在发送DigitalRupee之前，请认真核查发送金额和接收地址。</translation>
     </message>
     <message>
-        <source>These are your DigitalRupee addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Rupees addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>这是用于接收DigitalRupee的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
     </message>
     <message>
@@ -176,7 +176,7 @@
         <translation>确认钱包加密</translation>
     </message>
     <message>
-        <source>DigitalRupee will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
+        <source>Rupees will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
         <translation>DigitalRupee将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取PHRs。</translation>
     </message>
     <message>
@@ -239,7 +239,7 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a DigitalRupee Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Rupees Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>输入您要使用BIP 38加密的DigitalRupee地址。在中间框中输入密码。按加密计算加密私钥。</translation>
     </message>
     <message>
@@ -247,7 +247,7 @@
         <translation>地址：</translation>
     </message>
     <message>
-        <source>The DigitalRupee address to sign the message with</source>
+        <source>The Rupees address to sign the message with</source>
         <translation>该DigitalRupee地址签名的消息</translation>
     </message>
     <message>
@@ -279,7 +279,7 @@
         <translation>将当前签名复制到系统剪贴板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this DigitalRupee address</source>
+        <source>Sign the message to prove you own this Rupees address</source>
         <translation>签署消息以证明您拥有此DigitalRupee地址</translation>
     </message>
     <message>
@@ -303,11 +303,11 @@
         <translation>输入BIP 38加密私钥。 在中间框中输入密码。 单击解密密钥计算私钥。 密钥解密后，单击“导入地址”将将该私钥添加到钱包中。</translation>
     </message>
     <message>
-        <source>The DigitalRupee address the message was signed with</source>
+        <source>The Rupees address the message was signed with</source>
         <translation>由DigitalRupee地址签名的消息</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified DigitalRupee address</source>
+        <source>Verify the message to ensure it was signed with the specified Rupees address</source>
         <translation>验证消息确保它已使用指定的DigitalRupee地址进行签名</translation>
     </message>
     <message>
@@ -602,11 +602,11 @@
         <translation>标签工具栏</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
-        <source>Send coins to a DigitalRupee address</source>
+        <source>Send coins to a Rupees address</source>
         <translation>发送数字货币到DigitalRupee地址</translation>
     </message>
     <message>
@@ -630,23 +630,23 @@
         <translation>浏览主节点</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
+        <source>&amp;About Rupees Core</source>
         <translation>&amp;A关于DigitalRupee Core</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
+        <source>Show information about Rupees Core</source>
         <translation>显示DigitalRupee  Core的相关信息</translation>
     </message>
     <message>
-        <source>Modify configuration options for DigitalRupee</source>
+        <source>Modify configuration options for Rupees</source>
         <translation>修改DigitalRupee的配置选项</translation>
     </message>
     <message>
-        <source>Sign messages with your DigitalRupee addresses to prove you own them</source>
+        <source>Sign messages with your Rupees addresses to prove you own them</source>
         <translation>使用您的DigitalRupee地址验证消息，以证明您拥有他们</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified DigitalRupee addresses</source>
+        <source>Verify messages to ensure they were signed with specified Rupees addresses</source>
         <translation>验证消息确保它已使用指定的DigitalRupee地址进行签名</translation>
     </message>
     <message>
@@ -678,7 +678,7 @@
         <translation>打开主节点配置文件</translation>
     </message>
     <message>
-        <source>Open a DigitalRupee: URI or payment request</source>
+        <source>Open a Rupees: URI or payment request</source>
         <translation>打开DigitalRupee：URI或付款请求</translation>
     </message>
     <message>
@@ -690,15 +690,15 @@
         <translation>区块浏览窗口</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible DigitalRupee command-line options</source>
+        <source>Show the Rupees Core help message to get a list with possible Rupees command-line options</source>
         <translation>显示DigitalRupee Core帮助信息并获取DigitalRupee命令行选项列表</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>DigitalRupee Core 客户端</translation>
+        <source>Rupees Core client</source>
+        <translation>Rupees Core 客户端</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to DigitalRupee network</source>
+        <source>%n active connection(s) to Rupees network</source>
         <translation><numerusform>%n 活动连接到DigitalRupee网络
 </numerusform></translation>
     </message>
@@ -865,31 +865,31 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
-        <source>About DigitalRupee Core</source>
+        <source>About Rupees Core</source>
         <translation>关于DigitalRupee Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Welcome to DigitalRupee Core.</source>
-        <translation>欢迎使用 DigitalRupee Core</translation>
+        <source>Welcome to Rupees Core.</source>
+        <translation>欢迎使用 Rupees Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</source>
         <translation>由于这是该程序第一次启动，您可以选择存储DigitalRupee Core 数据的位置。</translation>
     </message>
     <message>
-        <source>DigitalRupee Core will download and store a copy of the DigitalRupee block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>DigitalRupee Core将下载并存储DigitalRupee区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
+        <source>Rupees Core will download and store a copy of the Rupees block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Rupees Core将下载并存储DigitalRupee区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -971,7 +971,7 @@ Address: %4
         <translation>如果您要禁用未经确认发送，在至少有一个确认之前&lt;br/&gt;不能更改。&lt;br/&gt;这也将影响您的余额计算。</translation>
     </message>
     <message>
-        <source>Automatically open the DigitalRupee client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Rupees client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自动打开路由器上的DigitalRupee钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
     </message>
     <message>
@@ -979,7 +979,7 @@ Address: %4
         <translation>&amp;使用SOCKS5代理（默认代理）</translation>
     </message>
     <message>
-        <source>&amp;Start DigitalRupee on system login</source>
+        <source>&amp;Start Rupees on system login</source>
         <translation>&amp;开机启动DigitalRupee</translation>
     </message>
     <message>
@@ -1118,7 +1118,7 @@ Address: %4
         <translation>您目前的支出余额</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DigitalRupee network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupees network after a connection is established, but this process has not completed yet.</source>
         <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与DigitalRupee网络同步，但此过程尚未完成。</translation>
     </message>
     <message>
@@ -1139,7 +1139,7 @@ Address: %4
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DigitalRupee network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupees network after a connection is established, but this process has not completed yet.</source>
         <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与DigitalRupee网络同步，但此过程尚未完成。</translation>
     </message>
     <message>
@@ -1227,11 +1227,11 @@ Address: %4
         <translation>&amp;消息：</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the DigitalRupee network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Rupees network.</source>
         <translation>附加到付款请求的可选消息，将在请求打开时显示。 注意：消息不会在付款时通过DigitalRupee网络发送。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the DigitalRupee network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Rupees network.</source>
         <translation>附加到付款请求的可选消息，将在请求打开时显示。&lt;br&gt; 注意：消息不会在付款时通过DigitalRupee网络发送。</translation>
     </message>
     <message>
@@ -1367,7 +1367,7 @@ Address: %4
         <translation>消息:</translation>
     </message>
     <message>
-        <source>A message that was attached to the DigitalRupee: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DigitalRupee network.</source>
+        <source>A message that was attached to the Rupees: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Rupees network.</source>
         <translation>附加到DigitalRupee：URI的消息，该消息将与转账信息一起存储以供参考。 注意：此消息不会通过DigitalRupee网络发送。</translation>
     </message>
     <message>
@@ -1393,7 +1393,7 @@ Address: %4
         <translation>您可以使用地址签名消息，以证明您拥有他们。 小心不要签名任何您不了解的，因为网络钓鱼攻击可能会试图欺骗您，以让您签名。 只能签署您熟悉并且了解和同意的。</translation>
     </message>
     <message>
-        <source>The DigitalRupee address to sign the message with</source>
+        <source>The Rupees address to sign the message with</source>
         <translation>该DigitalRupee地址签名的消息</translation>
     </message>
     <message>
@@ -1421,15 +1421,15 @@ Address: %4
         <translation>将当前签名复制到系统剪贴板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this DigitalRupee address</source>
+        <source>Sign the message to prove you own this Rupees address</source>
         <translation>签署消息以证明您拥有此DigitalRupee地址</translation>
     </message>
     <message>
-        <source>The DigitalRupee address the message was signed with</source>
+        <source>The Rupees address the message was signed with</source>
         <translation>由DigitalRupee地址签名的消息</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified DigitalRupee address</source>
+        <source>Verify the message to ensure it was signed with the specified Rupees address</source>
         <translation>验证消息确保它已使用指定的DigitalRupee地址进行签名</translation>
     </message>
     <message>
@@ -1508,8 +1508,8 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>DigitalRupee Core</translation>
+        <source>Rupees Core</source>
+        <translation>Rupees Core</translation>
     </message>
     </context>
 <context>
@@ -1597,8 +1597,8 @@ Address: %4
         <translation>在收到相关警报时执行命令，或者看到一个很长的分叉（cmd中的%s被消息替换）</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong DigitalRupee Core will not work properly.</source>
-        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，DigitalRupee Core将无法正常工作。</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Rupees Core will not work properly.</source>
+        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，Rupees Core将无法正常工作。</translation>
     </message>
     <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>

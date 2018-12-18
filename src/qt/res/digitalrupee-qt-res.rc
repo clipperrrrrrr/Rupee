@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "DigitalRupee"
-            VALUE "FileDescription",    "DigitalRupee Core (OSS GUI client for DigitalRupee)"
+            VALUE "CompanyName",        "Rupees"
+            VALUE "FileDescription",    "Rupees Core (OSS GUI client for Rupees)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "digitalrupee-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "digitalrupee-qt.exe"
-            VALUE "ProductName",        "DigitalRupee Core"
+            VALUE "ProductName",        "Rupees Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

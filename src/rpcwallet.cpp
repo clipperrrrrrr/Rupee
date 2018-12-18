@@ -86,7 +86,7 @@ UniValue getnewaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 2)
         throw runtime_error(
             "getnewaddress ( \"account\" \"address_type\" )\n"
-            "\nReturns a new DigitalRupee address for receiving payments.\n"
+            "\nReturns a new Rupees address for receiving payments.\n"
             "If 'account' is specified (recommended), it is added to the address book \n"
             "so payments received with the address will be credited to 'account'.\n"
             "\nArguments:\n"
@@ -168,7 +168,7 @@ UniValue getaccountaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "getaccountaddress \"account\"\n"
-            "\nReturns the current DigitalRupee address for receiving payments to this account.\n"
+            "\nReturns the current Rupees address for receiving payments to this account.\n"
             "\nArguments:\n"
             "1. \"account\"       (string, required) The account name for the address. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created and a new address created  if there is no account by the given name.\n"
             "\nResult:\n"
@@ -193,7 +193,7 @@ UniValue getrawchangeaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getrawchangeaddress ( \"address_type\" )\n"
-            "\nReturns a new DigitalRupee address, for receiving change.\n"
+            "\nReturns a new Rupees address, for receiving change.\n"
             "This is for use with raw transactions, NOT normal use.\n"
             "\nArguments:\n"
             "1. \"address_type\"           (string, optional) The address type to use. Options are \"legacy\", \"p2sh\", and \"bech32\". Default is set by -changetype.\n"
@@ -244,7 +244,7 @@ UniValue setaccount(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address");
 
     CTxDestination address = DecodeDestination(params[0].get_str());
 
@@ -284,7 +284,7 @@ UniValue getaccount(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address");
 
     CTxDestination address = DecodeDestination(params[0].get_str());
 
@@ -343,7 +343,7 @@ void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew,
         throw JSONRPCError(RPC_WALLET_ERROR, strError);
     }
 
-    // Parse DigitalRupee address
+    // Parse Rupees address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -382,7 +382,7 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address");
     
     CTxDestination address = DecodeDestination(params[0].get_str());
 
@@ -426,7 +426,7 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address");
 
     CTxDestination address = DecodeDestination(params[0].get_str());
 
@@ -563,7 +563,7 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
     
     // digitalrupee address
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address");
 
     CTxDestination address = DecodeDestination(params[0].get_str());
     CScript scriptPubKey = GetScriptForDestination(address);
@@ -847,7 +847,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
 
     string strAccount = AccountFromValue(params[0]);
     if (!IsValidDestinationString(params[1].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address");
 
     CTxDestination address = DecodeDestination(params[1].get_str());
     CAmount nAmount = AmountFromValue(params[2]);
@@ -920,7 +920,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
     vector<string> keys = sendTo.getKeys();
     BOOST_FOREACH(const string& name_, keys) {
         if (!IsValidDestinationString(name_))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid DigitalRupee address: ")+name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Rupees address: ")+name_);
         
         CTxDestination address = DecodeDestination(name_);
 
@@ -963,7 +963,7 @@ UniValue addmultisigaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 2 || params.size() > 3) {
         string msg = "addmultisigaddress nrequired [\"key\",...] ( \"account\" )\n"
                      "\nAdd a nrequired-to-sign multisignature address to the wallet.\n"
-                     "Each key is a DigitalRupee address or hex-encoded public key.\n"
+                     "Each key is a Rupees address or hex-encoded public key.\n"
                      "If 'account' is specified, assign address to that account.\n"
 
                      "\nArguments:\n"
@@ -2262,7 +2262,7 @@ UniValue autocombinerewards(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || (fEnable && params.size() != 2) || params.size() > 2)
         throw runtime_error(
             "autocombinerewards true|false ( threshold )\n"
-            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same DigitalRupee address\n"
+            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same Rupees address\n"
             "When autocombinerewards runs it will create a transaction, and therefore will be subject to transaction fees.\n"
 
             "\nArguments:\n"
@@ -2470,7 +2470,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
             "The MultiSend transaction is sent when the staked coins mature (100 confirmations)\n"
             "****************************************************************\n"
             "TO CREATE OR ADD TO THE MULTISEND VECTOR:\n"
-            "multisend <DigitalRupee Address> <percent>\n"
+            "multisend <Rupees Address> <percent>\n"
             "This will add a new address to the MultiSend vector\n"
             "Percent is a whole number 1 to 100.\n"
             "****************************************************************\n"
@@ -2837,7 +2837,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
         // Destination address was supplied as params[4]. Optional parameters MUST be at the end
         // to avoid type confusion from the JSON interpreter
         if(!IsValidDestinationString(params[4].get_str())) {
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DigitalRupee address");
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Rupees address");
         } else {
             address = DecodeDestination(params[4].get_str());
         }

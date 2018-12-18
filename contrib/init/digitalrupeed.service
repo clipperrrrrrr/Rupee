@@ -1,5 +1,5 @@
 [Unit]
-Description=DigitalRupee's distributed currency daemon
+Description=Rupees's distributed currency daemon
 After=network.target
 
 [Service]

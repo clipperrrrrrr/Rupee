@@ -814,7 +814,7 @@ bool MultisigDialog::createRedeemScript(int m, vector<string> vKeys, CScript& re
         for(vector<string>::iterator it = vKeys.begin(); it != vKeys.end(); ++it) {
             string keyString = *it;
 #ifdef ENABLE_WALLET
-            // Case 1: DigitalRupee address and we have full public key:
+            // Case 1: Rupees address and we have full public key:
             if (pwalletMain && IsValidDestinationString(keyString)) {
                 CTxDestination address = DecodeDestination(keyString);
                 CKeyID keyID = GetKeyForDestination(*pwalletMain, address);

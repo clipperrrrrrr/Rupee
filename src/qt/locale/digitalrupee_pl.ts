@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this DigitalRupee address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres DigitalRupee jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Rupees address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Rupees jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,12 +518,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>&amp;Rdzeń DigitalRupee</translation>
+        <source>Rupees Core</source>
+        <translation>&amp;Rdzeń Rupees</translation>
     </message>
     <message>
-        <source>Send coins to a DigitalRupee address</source>
-        <translation>Wyślij monety do adresu DigitalRupee</translation>
+        <source>Send coins to a Rupees address</source>
+        <translation>Wyślij monety do adresu Rupees</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and digitalrupee: URIs)</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About DigitalRupee Core</source>
+        <source>&amp;About Rupees Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about DigitalRupee Core</source>
+        <source>Show information about Rupees Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for DigitalRupee</source>
-        <translation>Modyfikuj opcje konfiguracji DigitalRupee</translation>
+        <source>Modify configuration options for Rupees</source>
+        <translation>Modyfikuj opcje konfiguracji Rupees</translation>
     </message>
     <message>
-        <source>Sign messages with your DigitalRupee addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami DigitalRupee, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your Rupees addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami Rupees, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified DigitalRupee addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu DigitalRupee</translation>
+        <source>Verify messages to ensure they were signed with specified Rupees addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Rupees</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,7 +582,7 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a DigitalRupee: URI or payment request</source>
+        <source>Open a Rupees: URI or payment request</source>
         <translation>OtwórzDRSX: URI i żądanie zapłaty</translation>
     </message>
     <message>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the DigitalRupee Core help message to get a list with possible DigitalRupee command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia DigitalRupee, aby dostać listę możliwych opcji DigitalRupee command-line</translation>
+        <source>Show the Rupees Core help message to get a list with possible Rupees command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia Rupees, aby dostać listę możliwych opcji Rupees command-line</translation>
     </message>
     <message>
-        <source>DigitalRupee Core client</source>
-        <translation>Rdzeń DigitalRupee klient</translation>
+        <source>Rupees Core client</source>
+        <translation>Rdzeń Rupees klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>&amp;Rdzeń DigitalRupee</translation>
+        <source>Rupees Core</source>
+        <translation>&amp;Rdzeń Rupees</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>&amp;Rdzeń DigitalRupee</translation>
+        <source>Rupees Core</source>
+        <translation>&amp;Rdzeń Rupees</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start DigitalRupee after logging in to the system.</source>
-        <translation>Automatycznie uruchom DigitalRupee po zalogowaniu do systemu</translation>
+        <source>Automatically start Rupees after logging in to the system.</source>
+        <translation>Automatycznie uruchom Rupees po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start DigitalRupee on system login</source>
-        <translation>&amp;Uruchom DigitalRupee podczas logowania do systemu</translation>
+        <source>&amp;Start Rupees on system login</source>
+        <translation>&amp;Uruchom Rupees podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,8 +1212,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting DigitalRupee.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie DigitalRupee</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Rupees.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Rupees</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1222,8 +1222,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
 https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the DigitalRupee network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią DigitalRupee poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the Rupees network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią Rupees poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a DigitalRupee address (e.g. %1)</source>
-        <translation>Wprowadź adres DigitalRupee (np. %1)</translation>
+        <source>Enter a Rupees address (e.g. %1)</source>
+        <translation>Wprowadź adres Rupees (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this DigitalRupee address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres DigitalRupee jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Rupees address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Rupees jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/digitalrupee-project/digitalrupee-project-translations
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>DigitalRupee Core</source>
-        <translation>&amp;Rdzeń DigitalRupee</translation>
+        <source>Rupees Core</source>
+        <translation>&amp;Rdzeń Rupees</translation>
     </message>
     </context>
 <context>

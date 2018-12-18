@@ -1,9 +1,9 @@
 Gitian building
 ================
 
-*Setup instructions for a Gitian build of DigitalRupee Core using a VM or physical system.*
+*Setup instructions for a Gitian build of Rupees Core using a VM or physical system.*
 
-Gitian is the deterministic build process that is used to build the DigitalRupee
+Gitian is the deterministic build process that is used to build the Rupees
 Core executables. It provides a way to be reasonably sure that the
 executables are really built from the git source. It also makes sure that
 the same, tested dependencies are used and statically built into the executable.
@@ -22,7 +22,7 @@ Table of Contents
 
 - [Preparing the Gitian builder host](#preparing-the-gitian-builder-host)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building DigitalRupee Core](#building-digitalrupee-core)
+- [Building Rupees Core](#building-digitalrupee-core)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -62,10 +62,10 @@ manual intervention. Also optionally follow the next step: 'Seed the Gitian sour
 and offline git repositories' which will fetch the remaining files required for building
 offline.
 
-Building DigitalRupee Core
+Building Rupees Core
 ----------------
 
-To build DigitalRupee Core (for Linux, OS X and Windows) just follow the steps under 'perform
+To build Rupees Core (for Linux, OS X and Windows) just follow the steps under 'perform
 Gitian builds' in [https://github.com/digitalrupeeproject/digitalrupee/blob/master/doc/release-process.md](https://github.com/digitalrupeeproject/digitalrupee/blob/master/doc/release-process.md#setup-and-perform-gitian-builds) in the digitalrupee repository.
 
 This may take some time as it will build all the dependencies needed for each descriptor.

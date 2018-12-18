@@ -16,8 +16,8 @@ BITCOIND_USER=${BITCOIND_USER:-digitalrupee}
 BITCOIND_GROUP=${BITCOIND_GROUP:-digitalrupee}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/digitalrupeed}
 
-name="DigitalRupee Core Daemon"
-description="DigitalRupee crypto-currency p2p network daemon"
+name="Rupees Core Daemon"
+description="Rupees crypto-currency p2p network daemon"
 
 command="/usr/bin/digitalrupeed"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"DigitalRupee Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Rupees Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

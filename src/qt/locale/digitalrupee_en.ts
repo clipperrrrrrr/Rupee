@@ -811,7 +811,7 @@
     <message>
         <location line="-427"/>
         <location line="+890"/>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -841,12 +841,12 @@
     </message>
     <message>
         <location line="+31"/>
-        <source>&amp;About DigitalRupee Core</source>
+        <source>&amp;About Rupees Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about DigitalRupee Core</source>
+        <source>Show information about Rupees Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -916,12 +916,12 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the DigitalRupee Core help message to get a list with possible Phore command-line options</source>
+        <source>Show the Rupees Core help message to get a list with possible Phore command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+204"/>
-        <source>DigitalRupee Core client</source>
+        <source>Rupees Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
@@ -1552,7 +1552,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1563,7 +1563,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About DigitalRupee Core</source>
+        <source>About Rupees Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1621,17 +1621,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to DigitalRupee Core.</source>
+        <source>Welcome to Rupees Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where DigitalRupee Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Rupees Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>DigitalRupee Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Rupees Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1646,7 +1646,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4904,7 +4904,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>DigitalRupee Core is shutting down...</source>
+        <source>Rupees Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5099,7 +5099,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>DigitalRupee Core</source>
+        <source>Rupees Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5119,7 +5119,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>The DigitalRupee Core developers</source>
+        <source>The Rupees Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6012,7 +6012,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. DigitalRupee Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Rupees Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6222,7 +6222,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. DigitalRupee Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Rupees Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6257,7 +6257,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong DigitalRupee Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Rupees Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6452,7 +6452,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The DigitalRupee Core Developers</source>
+        <source>Copyright (C) 2015-%i The Rupees Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6567,7 +6567,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of DigitalRupee Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Rupees Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6712,7 +6712,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. DigitalRupee Core is shutting down.</source>
+        <source>Initialization sanity check failed. Rupees Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7589,7 +7589,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart DigitalRupee Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Rupees Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
